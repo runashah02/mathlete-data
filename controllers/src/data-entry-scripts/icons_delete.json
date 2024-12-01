@@ -1,0 +1,1194 @@
+{
+  "airplane-00.svg": {
+    "singular": "airplane",
+    "plural": "airplanes"
+  },
+  "airplane-01.svg": {
+    "singular": "airplane",
+    "plural": "airplanes"
+  },
+  "alarm-clock-00.svg": {
+    "singular": "alarm clock",
+    "plural": "alarm clocks"
+  },
+  "alarm-clock-01.svg": {
+    "singular": "alarm clock",
+    "plural": "alarm clocks"
+  },
+  "apple-00.svg": {
+    "singular": "apple",
+    "plural": "apples"
+  },
+  "baby-suit-00.svg": {
+    "singular": "baby suit",
+    "plural": "baby suits"
+  },
+  "backpack-00.svg": {
+    "singular": "backpack",
+    "plural": "backpacks"
+  },
+  "backpack-01.svg": {
+    "singular": "backpack",
+    "plural": "backpacks"
+  },
+  "backpack-03.svg": {
+    "singular": "backpack",
+    "plural": "backpacks"
+  },
+  "ball-01.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-02.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-03.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-04.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-05.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-06.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-07.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-08.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-09.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-10.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "ball-11.svg": {
+    "singular": "ball",
+    "plural": "balls"
+  },
+  "banana-00.svg": {
+    "singular": "banana",
+    "plural": "bananas"
+  },
+  "bear-00.svg": {
+    "singular": "bear",
+    "plural": "bears"
+  },
+  "bee-00.svg": {
+    "singular": "bee",
+    "plural": "bees"
+  },
+  "bee-01.svg": {
+    "singular": "bee",
+    "plural": "bees"
+  },
+  "beetle-00.svg": {
+    "singular": "beetle",
+    "plural": "beetles"
+  },
+  "beetle-01.svg": {
+    "singular": "beetle",
+    "plural": "beetles"
+  },
+  "beetle-02.svg": {
+    "singular": "beetle",
+    "plural": "beetles"
+  },
+  "beetle-03.svg": {
+    "singular": "beetle",
+    "plural": "beetles"
+  },
+  "beetle-04.svg": {
+    "singular": "beetle",
+    "plural": "beetles"
+  },
+  "bicycle-00.svg": {
+    "singular": "bicycle",
+    "plural": "bicycles"
+  },
+  "bicycle-01.svg": {
+    "singular": "bicycle",
+    "plural": "bicycles"
+  },
+  "biscuit-00.svg": {
+    "singular": "biscuit",
+    "plural": "biscuits"
+  },
+  "boat-01.svg": {
+    "singular": "boat",
+    "plural": "boats"
+  },
+  "boat-02.svg": {
+    "singular": "boat",
+    "plural": "boats"
+  },
+  "book-00.svg": {
+    "singular": "book",
+    "plural": "books"
+  },
+  "bottle-00.svg": {
+    "singular": "bottle",
+    "plural": "bottles"
+  },
+  "brief-case-00.svg": {
+    "singular": "brief case",
+    "plural": "brief cases"
+  },
+  "brief-case-01.svg": {
+    "singular": "brief case",
+    "plural": "brief cases"
+  },
+  "bug-00.svg": {
+    "singular": "bug",
+    "plural": "bugs"
+  },
+  "burger-00.svg": {
+    "singular": "burger",
+    "plural": "burgers"
+  },
+  "bus-00.svg": {
+    "singular": "bus",
+    "plural": "buses"
+  },
+  "bus-01.svg": {
+    "singular": "bus",
+    "plural": "buses"
+  },
+  "butterfly-01.svg": {
+    "singular": "butterfly",
+    "plural": "butterflies"
+  },
+  "butterfly-02.svg": {
+    "singular": "butterfly",
+    "plural": "butterflies"
+  },
+  "butterfly-03.svg": {
+    "singular": "butterfly",
+    "plural": "butterflies"
+  },
+  "butterfly-04.svg": {
+    "singular": "butterfly",
+    "plural": "butterflies"
+  },
+  "butterfly-05.svg": {
+    "singular": "butterfly",
+    "plural": "butterflies"
+  },
+  "cake-00.svg": {
+    "singular": "cake",
+    "plural": "cakes"
+  },
+  "cake-01.svg": {
+    "singular": "cake",
+    "plural": "cakes"
+  },
+  "cake-02.svg": {
+    "singular": "cake",
+    "plural": "cakes"
+  },
+  "candy-00.svg": {
+    "singular": "candy",
+    "plural": "candies"
+  },
+  "candy-01.svg": {
+    "singular": "candy",
+    "plural": "candies"
+  },
+  "candy-02.svg": {
+    "singular": "candy",
+    "plural": "candies"
+  },
+  "candy-03.svg": {
+    "singular": "candy",
+    "plural": "candies"
+  },
+  "candy-cane-00.svg": {
+    "singular": "candy cane",
+    "plural": "candy canes"
+  },
+  "cap-00.svg": {
+    "singular": "cap",
+    "plural": "caps"
+  },
+  "car-00.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-01.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-02.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-04.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-05.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-06.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-07.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "car-08.svg": {
+    "singular": "car",
+    "plural": "cars"
+  },
+  "carrot-00.svg": {
+    "singular": "carrot",
+    "plural": "carrots"
+  },
+  "cat-00.svg": {
+    "singular": "cat",
+    "plural": "cats"
+  },
+  "cat-01.svg": {
+    "singular": "cat",
+    "plural": "cats"
+  },
+  "caterpillar-00.svg": {
+    "singular": "caterpillar",
+    "plural": "caterpillars"
+  },
+  "chameleon-00.svg": {
+    "singular": "chameleon",
+    "plural": "chameleons"
+  },
+  "chess-clock-00.svg": {
+    "singular": "chess clock",
+    "plural": "chess clocks"
+  },
+  "christmas-tree-00.svg": {
+    "singular": "christmas tree",
+    "plural": "christmas trees"
+  },
+  "clock-00.svg": {
+    "singular": "clock",
+    "plural": "clocks"
+  },
+  "clock-01.svg": {
+    "singular": "clock",
+    "plural": "clocks"
+  },
+  "clock-02.svg": {
+    "singular": "clock",
+    "plural": "clocks"
+  },
+  "clock-03.svg": {
+    "singular": "clock",
+    "plural": "clocks"
+  },
+  "corn-00.svg": {
+    "singular": "corn",
+    "plural": "corns"
+  },
+  "cow-00.svg": {
+    "singular": "cow",
+    "plural": "cows"
+  },
+  "cow-01.svg": {
+    "singular": "cow",
+    "plural": "cows"
+  },
+  "crab-00.svg": {
+    "singular": "crab",
+    "plural": "crabs"
+  },
+  "crocodile-00.svg": {
+    "singular": "crocodile",
+    "plural": "crocodiles"
+  },
+  "cupcake-00.svg": {
+    "singular": "cupcake",
+    "plural": "cupcakes"
+  },
+  "cupcake-01.svg": {
+    "singular": "cupcake",
+    "plural": "cupcakes"
+  },
+  "cupcake-02.svg": {
+    "singular": "cupcake",
+    "plural": "cupcakes"
+  },
+  "cupcake-03.svg": {
+    "singular": "cupcake",
+    "plural": "cupcakes"
+  },
+  "desk-lamp-00.svg": {
+    "singular": "desk lamp",
+    "plural": "desk lamps"
+  },
+  "digger-00.svg": {
+    "singular": "digger",
+    "plural": "diggers"
+  },
+  "digital-clock-00.svg": {
+    "singular": "digital clock",
+    "plural": "digital clocks"
+  },
+  "dinosaur-00.svg": {
+    "singular": "dinosaur",
+    "plural": "dinosaurs"
+  },
+  "dog-00.svg": {
+    "singular": "dog",
+    "plural": "dogs"
+  },
+  "dolphin-00.svg": {
+    "singular": "dolphin",
+    "plural": "dolphins"
+  },
+  "donut-00.svg": {
+    "singular": "donut",
+    "plural": "donuts"
+  },
+  "donut-01.svg": {
+    "singular": "donut",
+    "plural": "donuts"
+  },
+  "dump-truck-00.svg": {
+    "singular": "dump truck",
+    "plural": "dump trucks"
+  },
+  "elephant-00.svg": {
+    "singular": "elephant",
+    "plural": "elephants"
+  },
+  "elf-00.svg": {
+    "singular": "elf",
+    "plural": "elves"
+  },
+  "envelope-00.svg": {
+    "singular": "envelope",
+    "plural": "envelopes"
+  },
+  "fire-truck-00.svg": {
+    "singular": "fire truck",
+    "plural": "fire trucks"
+  },
+  "fire-truck-01.svg": {
+    "singular": "fire truck",
+    "plural": "fire trucks"
+  },
+  "firefly-00.svg": {
+    "singular": "firefly",
+    "plural": "fireflies"
+  },
+  "fish-00.svg": {
+    "singular": "fish",
+    "plural": "fishes"
+  },
+  "flamingo-00.svg": {
+    "singular": "flamingo",
+    "plural": "flamingoes"
+  },
+  "fly-00.svg": {
+    "singular": "fly",
+    "plural": "flies"
+  },
+  "food-truck-00.svg": {
+    "singular": "food truck",
+    "plural": "food trucks"
+  },
+  "french-fries-00.svg": {
+    "singular": "french fries",
+    "plural": "french fries"
+  },
+  "gaming-console-00.svg": {
+    "singular": "gaming console",
+    "plural": "gaming consoles"
+  },
+  "garbage-truck-00.svg": {
+    "singular": "garbage truck",
+    "plural": "garbage trucks"
+  },
+  "gingerbread man-00.svg": {
+    "singular": "gingerbread man",
+    "plural": "gingerbread men"
+  },
+  "giraffe-00.svg": {
+    "singular": "giraffe",
+    "plural": "giraffes"
+  },
+  "giraffe-01.svg": {
+    "singular": "giraffe",
+    "plural": "giraffes"
+  },
+  "gnome-00.svg": {
+    "singular": "gnome",
+    "plural": "gnomes"
+  },
+  "goat-00.svg": {
+    "singular": "goat",
+    "plural": "goats"
+  },
+  "grasshopper-00.svg": {
+    "singular": "grasshopper",
+    "plural": "grasshoppers"
+  },
+  "guitar-00.svg": {
+    "singular": "guitar",
+    "plural": "guitars"
+  },
+  "hatchback-car-00.svg": {
+    "singular": "hatchback car",
+    "plural": "hatchback cars"
+  },
+  "hedgehog-00.svg": {
+    "singular": "hedgehog",
+    "plural": "hedgehogs"
+  },
+  "helicopter-00.svg": {
+    "singular": "helicopter",
+    "plural": "helicopters"
+  },
+  "highlighter-00.svg": {
+    "singular": "highlighter",
+    "plural": "highlighters"
+  },
+  "hot-air-balloon-00.svg": {
+    "singular": "hot air balloon",
+    "plural": "hot air balloons"
+  },
+  "house-00.svg": {
+    "singular": "house",
+    "plural": "houses"
+  },
+  "hummingbird-00.svg": {
+    "singular": "hummingbird",
+    "plural": "hummingbirds"
+  },
+  "ice-cream-00.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-01.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-02.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-03.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-04.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-05.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-06.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-07.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-08.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-09.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-10.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-11.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "ice-cream-12.svg": {
+    "singular": "ice cream",
+    "plural": "ice creams"
+  },
+  "insect-00.svg": {
+    "singular": "insect",
+    "plural": "insects"
+  },
+  "jellyfish-00.svg": {
+    "singular": "jellyfish",
+    "plural": "jellyfish"
+  },
+  "kite-00.svg": {
+    "singular": "kite",
+    "plural": "kites"
+  },
+  "koalas-00.svg": {
+    "singular": "koala bear",
+    "plural": "koala bears"
+  },
+  "ladybird-00.svg": {
+    "singular": "ladybird",
+    "plural": "ladybirds"
+  },
+  "lemur-00.svg": {
+    "singular": "lemur",
+    "plural": "lemurs"
+  },
+  "limousine-00.svg": {
+    "singular": "limousine",
+    "plural": "limousines"
+  },
+  "lion-00.svg": {
+    "singular": "lion",
+    "plural": "lions"
+  },
+  "lobster-00.svg": {
+    "singular": "lobster",
+    "plural": "lobsters"
+  },
+  "lollipop-01.svg": {
+    "singular": "lollipop",
+    "plural": "lollipops"
+  },
+  "lollipop-02.svg": {
+    "singular": "lollipop",
+    "plural": "lollipops"
+  },
+  "lollipop-03.svg": {
+    "singular": "lollipop",
+    "plural": "lollipops"
+  },
+  "lollipop-jar-00.svg": {
+    "singular": "lollipop jar",
+    "plural": "lollipop jars"
+  },
+  "macaroon-00.svg": {
+    "singular": "macaroon",
+    "plural": "macaroons"
+  },
+  "magic-wand-00.svg": {
+    "singular": "magic wand",
+    "plural": "magic wands"
+  },
+  "mobile-00.svg": {
+    "singular": "mobile",
+    "plural": "mobiles"
+  },
+  "monkey-00.svg": {
+    "singular": "monkey",
+    "plural": "monkeys"
+  },
+  "motorcycle-00.svg": {
+    "singular": "motorcycle",
+    "plural": "motorcycles"
+  },
+  "mountain-bike-00.svg": {
+    "singular": "mountain bike",
+    "plural": "mountain bikes"
+  },
+  "mouse-00.svg": {
+    "singular": "mouse",
+    "plural": "mice"
+  },
+  "notepad-00.svg": {
+    "singular": "notepad",
+    "plural": "notepads"
+  },
+  "octopus-00.svg": {
+    "singular": "octopus",
+    "plural": "octopuses"
+  },
+  "off-road-truck-00.svg": {
+    "singular": "off road truck",
+    "plural": "off road trucks"
+  },
+  "oil-lamp-00.svg": {
+    "singular": "oil lamp",
+    "plural": "oil lamps"
+  },
+  "orange-00.svg": {
+    "singular": "orange",
+    "plural": "oranges"
+  },
+  "otter-00.svg": {
+    "singular": "otter",
+    "plural": "otters"
+  },
+  "panda-00.svg": {
+    "singular": "panda",
+    "plural": "pandas"
+  },
+  "panda-bear-00.svg": {
+    "singular": "panda bear",
+    "plural": "panda bears"
+  },
+  "paper-boat-00.svg": {
+    "singular": "paper boat",
+    "plural": "paper boats"
+  },
+  "paprika-00.svg": {
+    "singular": "paprika",
+    "plural": "paprikas"
+  },
+  "pear-00.svg": {
+    "singular": "pear",
+    "plural": "pears"
+  },
+  "pen-00.svg": {
+    "singular": "pen",
+    "plural": "pens"
+  },
+  "pencil-00.svg": {
+    "singular": "pencil",
+    "plural": "pencils"
+  },
+  "pencil-sharpener-00.svg": {
+    "singular": "pencil sharpener",
+    "plural": "pencil sharpeners"
+  },
+  "piano-00.svg": {
+    "singular": "piano",
+    "plural": "pianos"
+  },
+  "piano-01.svg": {
+    "singular": "piano",
+    "plural": "pianos"
+  },
+  "piano-02.svg": {
+    "singular": "piano",
+    "plural": "pianos"
+  },
+  "pickup-truck-00.svg": {
+    "singular": "pickup truck",
+    "plural": "pickup trucks"
+  },
+  "pig-00.svg": {
+    "singular": "pig",
+    "plural": "pigs"
+  },
+  "pillow-00.svg": {
+    "singular": "pillow",
+    "plural": "pillows"
+  },
+  "pinwheel-00.svg": {
+    "singular": "pinwheel",
+    "plural": "pinwheels"
+  },
+  "pinwheel-01.svg": {
+    "singular": "pinwheel",
+    "plural": "pinwheels"
+  },
+  "pizza-00.svg": {
+    "singular": "pizza",
+    "plural": "pizzas"
+  },
+  "polar-bear-00.svg": {
+    "singular": "polar bear",
+    "plural": "polar bears"
+  },
+  "police-car-00.svg": {
+    "singular": "police car",
+    "plural": "police cars"
+  },
+  "popsicle-00.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-01.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-02.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-03.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-04.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-05.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-06.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-07.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-08.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-09.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-10.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-11.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-12.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-13.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-14.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "popsicle-15.svg": {
+    "singular": "popsicle",
+    "plural": "popsicles"
+  },
+  "pot-00.svg": {
+    "singular": "pot",
+    "plural": "pots"
+  },
+  "present-00.svg": {
+    "singular": "present",
+    "plural": "presents"
+  },
+  "puffer-fish-00.svg": {
+    "singular": "puffer fish",
+    "plural": "puffer fishes"
+  },
+  "pumpkin-00.svg": {
+    "singular": "pumpkin",
+    "plural": "pumpkins"
+  },
+  "puppy-00.svg": {
+    "singular": "puppy",
+    "plural": "puppies"
+  },
+  "puppy-01.svg": {
+    "singular": "puppy",
+    "plural": "puppies"
+  },
+  "purse-00.svg": {
+    "singular": "purse",
+    "plural": "purses"
+  },
+  "raccoon-00.svg": {
+    "singular": "raccoon",
+    "plural": "raccoons"
+  },
+  "racing-car-00.svg": {
+    "singular": "racing car",
+    "plural": "racing cars"
+  },
+  "radio-00.svg": {
+    "singular": "radio",
+    "plural": "radios"
+  },
+  "radish-00.svg": {
+    "singular": "radish",
+    "plural": "radishes"
+  },
+  "rainbow-00.svg": {
+    "singular": "rainbow",
+    "plural": "rainbows"
+  },
+  "rattle-00.svg": {
+    "singular": "rattle",
+    "plural": "rattles"
+  },
+  "rattle-01.svg": {
+    "singular": "rattle",
+    "plural": "rattles"
+  },
+  "rickshaw-00.svg": {
+    "singular": "rickshaw",
+    "plural": "rickshaws"
+  },
+  "ride-on-00.svg": {
+    "singular": "ride on",
+    "plural": "ride ons"
+  },
+  "robot-03.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-04.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-05.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-06.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-07.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-08.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-09.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-10.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-11.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-12.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-13.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "robot-14.svg": {
+    "singular": "robot",
+    "plural": "robots"
+  },
+  "rocket-00.svg": {
+    "singular": "rocket",
+    "plural": "rockets"
+  },
+  "rocking-horse-00.svg": {
+    "singular": "rocking horse",
+    "plural": "rocking horses"
+  },
+  "rocking-horse-02.svg": {
+    "singular": "rocking horse",
+    "plural": "rocking horses"
+  },
+  "rubik-cube-00.svg": {
+    "singular": "rubik's cube",
+    "plural": "rubik's cubes"
+  },
+  "rugby-ball-00.svg": {
+    "singular": "rugby ball",
+    "plural": "rugby balls"
+  },
+  "sailboat-00.svg": {
+    "singular": "sail boat",
+    "plural": "sail boats"
+  },
+  "sand-castle-00.svg": {
+    "singular": "sand castle",
+    "plural": "sand castles"
+  },
+  "school-bus-00.svg": {
+    "singular": "school bus",
+    "plural": "school buses"
+  },
+  "scooter-00.svg": {
+    "singular": "scooter",
+    "plural": "scooters"
+  },
+  "scooter-01.svg": {
+    "singular": "scooter",
+    "plural": "scooters"
+  },
+  "scooter-02.svg": {
+    "singular": "scooter",
+    "plural": "scooters"
+  },
+  "seahorse-00.svg": {
+    "singular": "seahorse",
+    "plural": "seahorses"
+  },
+  "seal-00.svg": {
+    "singular": "seal",
+    "plural": "seals"
+  },
+  "shark-00.svg": {
+    "singular": "shark",
+    "plural": "sharks"
+  },
+  "shark-01.svg": {
+    "singular": "shark",
+    "plural": "sharks"
+  },
+  "ship-00.svg": {
+    "singular": "ship",
+    "plural": "ships"
+  },
+  "ship-01.svg": {
+    "singular": "ship",
+    "plural": "ships"
+  },
+  "ship-02.svg": {
+    "singular": "ship",
+    "plural": "ships"
+  },
+  "ship-03.svg": {
+    "singular": "ship",
+    "plural": "ships"
+  },
+  "shuttle-bus-00.svg": {
+    "singular": "shuttle bus",
+    "plural": "shuttle buses"
+  },
+  "skate-00.svg": {
+    "singular": "skate",
+    "plural": "skates"
+  },
+  "skateboard-00.svg": {
+    "singular": "skate board",
+    "plural": "skate boards"
+  },
+  "slug-00.svg": {
+    "singular": "slug",
+    "plural": "slugs"
+  },
+  "snail-00.svg": {
+    "singular": "snail",
+    "plural": "snails"
+  },
+  "snail-01.svg": {
+    "singular": "snail",
+    "plural": "snails"
+  },
+  "snow globe-00.svg": {
+    "singular": "snow globe",
+    "plural": "snow globes"
+  },
+  "spades.svg": {
+    "singular": "spa",
+    "plural": "spas"
+  },
+  "spinner-00.svg": {
+    "singular": "spinner",
+    "plural": "spinners"
+  },
+  "spinning-top-00.svg": {
+    "singular": "spinning top",
+    "plural": "spinning tops"
+  },
+  "spinning-top-01.svg": {
+    "singular": "spinning top",
+    "plural": "spinning tops"
+  },
+  "sports-car-00.svg": {
+    "singular": "sports car",
+    "plural": "sports cars"
+  },
+  "squirrel-00.svg": {
+    "singular": "squirrel",
+    "plural": "squirrels"
+  },
+  "stocking-00.svg": {
+    "singular": "stocking",
+    "plural": "stockings"
+  },
+  "strawberry-00.svg": {
+    "singular": "strawberry",
+    "plural": "strawberries"
+  },
+  "suitcase-00.svg": {
+    "singular": "suit case",
+    "plural": "suit cases"
+  },
+  "suv-car-00.svg": {
+    "singular": "suv car",
+    "plural": "suv cars"
+  },
+  "table-lamp-00.svg": {
+    "singular": "table lamp",
+    "plural": "table lamps"
+  },
+  "tanker-00.svg": {
+    "singular": "tanker",
+    "plural": "tankers"
+  },
+  "taxi-00.svg": {
+    "singular": "taxi",
+    "plural": "taxis"
+  },
+  "taxi-01.svg": {
+    "singular": "taxi",
+    "plural": "taxis"
+  },
+  "teddy-bear-00.svg": {
+    "singular": "teddy bear",
+    "plural": "teddy bears"
+  },
+  "teddy-bear-01.svg": {
+    "singular": "teddy bear",
+    "plural": "teddy bears"
+  },
+  "tiger-00.svg": {
+    "singular": "tiger",
+    "plural": "tigers"
+  },
+  "tiger-01.svg": {
+    "singular": "tiger",
+    "plural": "tigers"
+  },
+  "tomato-00.svg": {
+    "singular": "tomato",
+    "plural": "tomatoes"
+  },
+  "toucan-00.svg": {
+    "singular": "toucan",
+    "plural": "toucans"
+  },
+  "toy-00.svg": {
+    "singular": "toy",
+    "plural": "toys"
+  },
+  "toy-car-00.svg": {
+    "singular": "toy car",
+    "plural": "toy cars"
+  },
+  "toy-train-00.svg": {
+    "singular": "toy train",
+    "plural": "toy trains"
+  },
+  "toy-train-01.svg": {
+    "singular": "toy train",
+    "plural": "toy trains"
+  },
+  "toy-train-02.svg": {
+    "singular": "toy train",
+    "plural": "toy trains"
+  },
+  "toy-train-03.svg": {
+    "singular": "toy train",
+    "plural": "toy trains"
+  },
+  "tractor-00.svg": {
+    "singular": "tractor",
+    "plural": "tractors"
+  },
+  "trailer-00.svg": {
+    "singular": "trailer",
+    "plural": "trailers"
+  },
+  "trophy-00.svg": {
+    "singular": "trophy",
+    "plural": "trophies"
+  },
+  "truck-00.svg": {
+    "singular": "truck",
+    "plural": "trucks"
+  },
+  "truck-01.svg": {
+    "singular": "truck",
+    "plural": "trucks"
+  },
+  "truck-02.svg": {
+    "singular": "truck",
+    "plural": "trucks"
+  },
+  "truck-03.svg": {
+    "singular": "truck",
+    "plural": "trucks"
+  },
+  "turtle-00.svg": {
+    "singular": "turtle",
+    "plural": "turtles"
+  },
+  "van-00.svg": {
+    "singular": "van",
+    "plural": "vans"
+  },
+  "van-01.svg": {
+    "singular": "van",
+    "plural": "vans"
+  },
+  "wallet-00.svg": {
+    "singular": "wallet",
+    "plural": "wallets"
+  },
+  "wasp-00.svg": {
+    "singular": "wasp",
+    "plural": "wasps"
+  },
+  "watering-can-00.svg": {
+    "singular": "watering can",
+    "plural": "watering cans"
+  },
+  "watermelon-00.svg": {
+    "singular": "watermelon",
+    "plural": "watermelons"
+  },
+  "worm-00.svg": {
+    "singular": "worm",
+    "plural": "worms"
+  },
+  "yoyo-toy-00.svg": {
+    "singular": "yoyo toy",
+    "plural": "yoyo toys"
+  },
+  "zebra-00.svg": {
+    "singular": "zebra",
+    "plural": "zebras"
+  },
+  "jack-in-the-box-toy-00.svg": {
+    "singular": "Jack in the box toy",
+    "plural": "Jack in the box toys"
+  },
+  "dragonfly-00.svg": {
+    "singular": "dragon fly",
+    "plural": "dragon flies"
+  },
+  "clipboard-00.svg": {
+    "singular": "clipboard",
+    "plural": "clipboards"
+  },
+  "candy-jar-00.svg": {
+    "singular": "candy jar",
+    "plural": "candy jars"
+  },
+  "castle-00.svg": {
+    "singular": "castle",
+    "plural": "castles"
+  },
+  "coconut-tree-00.svg": {
+    "singular": "coconut tree",
+    "plural": "coconut trees"
+  },
+  "doll-00.svg": {
+    "singular": "doll",
+    "plural": "dolls"
+  }
+}

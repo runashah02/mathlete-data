@@ -1,0 +1,231 @@
+const fs = require("fs");
+const path = require("path");
+
+const { generateRandom4, saveQuestionsToJSONFile } = require("../utility.js");
+const util = require("./addition_utility.js");
+
+// Load the icons
+const icon = { iconName: "dot.svg", singular: "dot", plural: "dots" };
+
+function generateUniqueAddends() {
+  const smallResults = new Set();
+  const results = new Set();
+
+  // Helper function to generate random number within a digit range
+  function generateRandomNumber(digits) {
+      const min = 10 ** (digits - 1);
+      const max = 10 ** digits - 1;
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Helper function to generate all possible pairs and sample unique pairs if needed
+  function generatePairs(digitsA, digitsB, count) {
+      const pairs = new Set();
+
+      // Generate pairs until reaching the required count
+      while (pairs.size < count) {
+          const a = generateRandomNumber(digitsA);
+          const b = generateRandomNumber(digitsB);
+          const pair = [a, b].sort((x, y) => x - y).join(',');
+
+          pairs.add(pair); // Ensure each pair is unique
+      }
+
+      // Add the pairs to the results set
+      for (const pair of pairs) {
+          results.add(pair);
+      }
+  }
+
+  // Generate all pairs for 1-digit + 1-digit and 2-digit + 2-digit
+  for (let i = 1; i <= 9; i++) {
+      for (let j = 1; j <= 9; j++) {
+          smallResults.add([i, j].sort((x, y) => x - y).join(','));
+      }
+  }
+  for (let i = 10; i <= 99; i++) {
+      for (let j = 10; j <= 99; j++) {
+          smallResults.add([i, j].sort((x, y) => x - y).join(','));
+      }
+  }
+
+  // Generate sampled pairs for each required case
+  generatePairs(3, 1, 2000); // 2000 pairs of 3-digit + 1-digit
+  generatePairs(3, 2, 4000); // 4000 pairs of 3-digit + 2-digit
+  generatePairs(3, 3, 4000); // 4000 pairs of 3-digit + 3-digit
+  generatePairs(4, 1, 2000); // 2000 pairs of 4-digit + 1-digit
+  generatePairs(4, 2, 2000); // 2000 pairs of 4-digit + 2-digit
+  generatePairs(4, 3, 4000); // 4000 pairs of 4-digit + 3-digit
+  generatePairs(4, 4, 4000); // 4000 pairs of 4-digit + 4-digit
+  generatePairs(5, 3, 2000); // 2000 pairs of 5-digit + 3-digit
+  generatePairs(5, 4, 4000); // 4000 pairs of 5-digit + 4-digit
+  generatePairs(5, 5, 4000); // 4000 pairs of 5-digit + 5-digit
+  generatePairs(6, 2, 2000); // 2000 pairs of 6-digit + 2-digit
+  generatePairs(6, 3, 2000); // 2000 pairs of 6-digit + 3-digit
+  generatePairs(6, 4, 2000); // 2000 pairs of 6-digit + 4-digit
+  generatePairs(6, 5, 2000); // 2000 pairs of 6-digit + 5-digit
+  generatePairs(6, 6, 2000); // 2000 pairs of 6-digit + 6-digit
+  generatePairs(7, 4, 2000); // 2000 pairs of 7-digit + 4-digit
+  generatePairs(7, 5, 2000); // 2000 pairs of 7-digit + 5-digit
+  generatePairs(7, 6, 2000); // 2000 pairs of 7-digit + 6-digit
+  generatePairs(7, 7, 2000); // 2000 pairs of 7-digit + 7-digit
+
+  return [Array.from(smallResults).map(pair => pair.split(',').map(Number)), Array.from(results).map(pair => pair.split(',').map(Number))];
+}
+
+// Example usage
+const [smallAddends, addends] = generateUniqueAddends();
+console.log("Total unique addends generated:", smallAddends.length, addends.length);
+console.log(addends.slice(0, 20)); // Display first 20 pairs
+
+
+
+
+<html>
+  <head>
+    <style>
+      .op-grid {
+        width: fit-content;
+        gap: 0px;
+        border: 1px solid lightgray;
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+      }
+
+      .op-grid > div {
+        border: 1px solid #eeeeee;
+        border-collapse: collapse;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+      .op-grid > div:nth-last-child(-n + 4) {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+
+      .carryforward {
+        color: darkgray;
+        font-style: italic;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        font-size: 12pt !important;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .place-names {
+        background-color: #f5e9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 30px">Place the addends in columns as shown</div>
+    <div class="op-grid">
+      <div></div>
+      <div class="place-names">H</div>
+      <div class="place-names">T</div>
+      <div class="place-names">O</div>
+      <div class="carry-forward"></div>
+      <div class="carry-forward"></div>
+      <div class="carry-forward"></div>
+      <div class="carry-forward"></div>
+      <div></div>
+      <div></div>
+      <div>8</div>
+      <div>9</div>
+      <div>+</div>
+      <div></div>
+      <div>1</div>
+      <div>8</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div style="margin-top: 30px">Add the ones. 9 + 8 = 17</div>
+    <div style="margin-top: 5px; margin-bottom: 30px">Write 7 in the ones place, carry forward 1 to the tens place</div>
+    <div class="op-grid">
+      <div></div>
+      <div class="place-names">H</div>
+      <div class="place-names">T</div>
+      <div class="place-names">O</div>
+      <div></div>
+      <div></div>
+      <div style="color: darkgray; font-style: italic">1</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div>8</div>
+      <div style="color: #7a0bd1">9</div>
+      <div>+</div>
+      <div></div>
+      <div>1</div>
+      <div style="color: #7a0bd1">8</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div style="color: #7a0bd1">7</div>
+    </div>
+
+    <div style="margin-top: 30px">Add the tens. 1 + 8 + 1 = 10</div>
+    <div style="margin-top: 5px; margin-bottom: 30px">
+      Write 0 in the tens place, carry forward 1 to the hundreds place
+    </div>
+    <div class="op-grid">
+      <div></div>
+      <div class="place-names">H</div>
+      <div class="place-names">T</div>
+      <div class="place-names">O</div>
+      <div class="carry-forward"></div>
+      <div class="carry-forward">1</div>
+      <div class="carry-forward">1</div>
+      <div class="carry-forward"></div>
+      <div></div>
+      <div></div>
+      <div style="color: #7a0bd1">8</div>
+      <div>9</div>
+      <div>+</div>
+      <div></div>
+      <div style="color: #7a0bd1">1</div>
+      <div>8</div>
+      <div></div>
+      <div></div>
+      <div style="color: #7a0bd1">0</div>
+      <div>7</div>
+    </div>
+    <div style="margin-top: 30px">Add the hundreds.</div>
+    <div style="margin-top: 5px; margin-bottom: 30px">
+      Write 1 in the hundreds place
+    </div>
+    <div class="op-grid">
+      <div></div>
+      <div class="place-names">H</div>
+      <div class="place-names">T</div>
+      <div class="place-names">O</div>
+      <div class="carry-forward"></div>
+      <div class="carry-forward">1</div>
+      <div class="carry-forward">1</div>
+      <div class="carry-forward"></div>
+      <div></div>
+      <div></div>
+      <div>8</div>
+      <div>9</div>
+      <div>+</div>
+      <div></div>
+      <div>1</div>
+      <div>8</div>
+      <div></div>
+      <div style="color: #7a0bd1">1</div>
+      <div>0</div>
+      <div>7</div>
+    </div>
+    <p>89 + 18 = 107</p>
+</body>
+</html>

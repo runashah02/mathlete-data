@@ -1,0 +1,212 @@
+Write a program in node.js to generate a lot of questions in the following format. 
+
+[
+  {
+    "questionStmt": "<p>How many shapes are there?</p><div>...</div>",
+    "questionType": "MULTIPLE_CHOICE",
+    "explanation": "STATIC",
+    "answerExplanation": "<p>How many shapes are there?</p><div>...</div>",
+    "optionsType": "TEXT",
+    "optionsStyleClass": "default-option",
+    "optionsGridStyleClass": "default-grid",
+    "optionsGridCols": 5,
+    "shuffleOptions": 0,
+    "parentQuestionId": null,
+    "source": 1,
+    "referenceQuestionId": null,
+    "exerciseId": 3,
+    "topicId": 1,
+    "highestNumberHandled": 1,
+    "exampleQuestionId": null,
+    "points": 1,
+    "twistiness": 0,
+    "instructions": null,
+    "hint1": null,
+    "hint2": null,
+    "questionStatus": "PENDING_REVIEW",
+    "answerOptions": [
+      {
+        "answerOptionId": 1,
+        "optionId": "7%5A",
+        "optionContent": "1",
+        "choiceOrderNo": 1
+      },
+      {
+        "answerOptionId": 2,
+        "optionId": "A3L2",
+        "optionContent": "2",
+        "choiceOrderNo": 2
+      },
+      {
+        "answerOptionId": 3,
+        "optionId": "9zYj",
+        "optionContent": "3",
+        "choiceOrderNo": 3
+      },
+      {
+        "answerOptionId": 4,
+        "optionId": "EuIf",
+        "optionContent": "4",
+        "choiceOrderNo": 4
+      },
+      {
+        "answerOptionId": 5,
+        "optionId": "ZBEu",
+        "optionContent": "5",
+        "choiceOrderNo": 5
+      },
+      {
+        "answerOptionId": 6,
+        "optionId": "5Df@",
+        "optionContent": "6",
+        "choiceOrderNo": 6
+      },
+      {
+        "answerOptionId": 7,
+        "optionId": "E3zR",
+        "optionContent": "7",
+        "choiceOrderNo": 7
+      },
+      {
+        "answerOptionId": 8,
+        "optionId": "QHq*",
+        "optionContent": "8",
+        "choiceOrderNo": 8
+      },
+      {
+        "answerOptionId": 9,
+        "optionId": "QDOb",
+        "optionContent": "9",
+        "choiceOrderNo": 9
+      },
+      {
+        "answerOptionId": 10,
+        "optionId": "7@Gv",
+        "optionContent": "10",
+        "choiceOrderNo": 10
+      }
+    ],
+    "answers": [
+      {
+        "answerId": 1,
+        "questionId": 1,
+        "answerCode": "7%5A",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": true
+      },
+      {
+        "answerId": 2,
+        "questionId": 1,
+        "answerCode": "A3L2",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 3,
+        "questionId": 1,
+        "answerCode": "9zYj",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 4,
+        "questionId": 1,
+        "answerCode": "EuIf",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 5,
+        "questionId": 1,
+        "answerCode": "ZBEu",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 6,
+        "questionId": 1,
+        "answerCode": "5Df@",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 7,
+        "questionId": 1,
+        "answerCode": "E3zR",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 8,
+        "questionId": 1,
+        "answerCode": "QHq*",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 9,
+        "questionId": 1,
+        "answerCode": "QDOb",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      },
+      {
+        "answerId": 10,
+        "questionId": 1,
+        "answerCode": "7@Gv",
+        "caseSensitive": 0,
+        "ignoreSpaces": 1,
+        "ignoreHyphens": 0,
+        "allowTypos": 0,
+        "isCorrect": false
+      }
+    ]
+  },
+]
+In <div>...</div>displays a random number of squares (1..10) in colors (f9d18b, e47c6e, 78b75b, db967c, c3d272, 3d98f7, c7e2fc) with a 2px black border.
+The sqaures must not overlap each other... their size can range from 20px * 20px to 80px * 80px.
+The same html must display in answerExplanation as well.
+
+There should be 10 questions. No. of squares must be between 1 and 10
+Options are always 1 to 10. 
+Highest number handled is 10.
+
+Use the ./utility.js to import 2 fns 
+
+const { generateRandom4, saveQuestionsToJSONFile } = require('./utility.js');
+
+optionId is a random 4-char string generated using generateRandom4
+Finally save the questions to the JSON file like This
+
+const questions = generateQuestions();
+const fileNameWithoutExt = path.basename(__filename, '.js');
+saveQuestionsToJSONFile (questions, fileNameWithoutExt);
+
+I have 300 icons. I want to generate a total of 2700 problems. Starting with 9 apples, 9 donuts, 9 cars, ..., 8 apples, 8 donuts, 8 cars, ... and so on upto 1 apple, 1 donut, 1 car

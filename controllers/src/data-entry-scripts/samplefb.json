@@ -1,0 +1,589 @@
+[
+  {
+    "questionId": 0,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Count and write the number and the number name:</p><table class='tbl-blue-grid'><tr><td><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60' /></td><td>1</td><td>One</td></tr><tr><td><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60' /><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60' /><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60' /></td><td><input name='vnbh' answer-code='vnbh' type='text' size='1' value='' class='form-control' autofocus></td><td><input name='abhy' answer-code='abhy' type='text' size='1' value='' class='form-control'></td></tr></table>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[3]]]
+          },
+          {
+            "answerCodes": ["abhy"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[["Three"]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "STATIC",
+    "answerExplanation": "<p>Count and write the number and the number name:</p><table class='tbl-blue-grid'><tr><td><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60 image-overlay' /></td><td></td><td></td><td>1</td><td>One</td></tr><tr><td style='position: relative'><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60 image-overlay' /><div class='counting-number'>1</div></td><td style='position: relative'><img src='/assets/count-objects/ladybird-00.svg' class='counting-object-image-60 image-overlay' /><div class='counting-number'>2</div></td><td style='position: relative'><img src='/assets/count-objects/ladybird-00.svg'class='counting-object-image-60 image-overlay' /><div class='counting-number'>3</div></td><td><input id='vnbh' type='text' size='1' value='3' class='form-control' disabled /></td><td><input id='abhy' type='text' size='1' value='Three' class='form-control' disabled /></td></tr></table>"
+  },
+  {
+    "questionId": 1,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomStyles": "",
+    "questionCustomStyles": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Dora drinks a 12-ounce can of cola. Erika drinks half of a 20-ounce bottle of cola. How many more ounces of cola does Dora drink than Erika?",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[2]]],
+            "answerUnit": "ounces"
+          }
+        ]
+      }
+    ],
+    "explanation": "STATIC",
+    "answerExplanation": "<p>Dora drinks 12 ounces of cola.<br/>Erika drinks half of 20 ounces, which is: 20/2 = 10 ounces.<br/><br/>Now, find how many more ounces Dora drinks than Erika:<br/>12 - 10 = 2 ounces<br/><br/>Dora drinks 2 more ounces of cola than Erika."
+  },
+  {
+    "questionId": 2,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomStyles": "",
+    "questionCustomStyles": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>What is the result when one hundred twenty-eight thousand is subtracted from one million?</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "inputType": "INPUT",
+            "inputWidth": "auto",
+            "inputHeight": "auto",
+            "inputCSSClass": "",
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "ignoreHyphens": true,
+            "allowedAnswers": [[["Eight hundred seventy-two thousand", "872000", "8,72,000"]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 3,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>For each rock-paper-scissors match, paper beats rock, rock beats scissors, scissors beat paper and two identical items result in a tie. Based on this table, which summarizes the results of Kalyani and Mark’s last 200 matches, how many matches did Kalyani win?</p><img src='/assets/questions/question-sample-1-00.png'/>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "ignoreHyphens": 1,
+            "allowedAnswers": [[[65]]],
+            "answerUnit": "matches"
+          }
+        ]
+      }
+    ],
+    "explanation": "STATIC",
+    "answerExplanation": "<p>Let us mark the matches where Kalyani beat Mark.</p><p>These are the matches where <ol><li>Kalyani played paper, Mark played rock</li><li>Kalyani played rock, Mark played scissors</li><li>Kalyani played scissors, Mark played paper</p><img src='/assets/questions/question-sample-1-01.png'/><p>Total matches won by Kalyani = 24 + 20 + 21 = 65 matches"
+  },
+  {
+    "questionId": 4,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Penelope and George go trick-or-treating together. Penelope gets 152 pieces of candy and George gets 124 pieces of candy. Penelope eats 5 pieces of candy every day, and George eats 4 pieces of candy every day. After how many days will George have the same amount of candy as Penelope?",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "possibleAnswerSets": 1,
+            "requiredAnswerSets": 1,
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "ignoreHyphens": 1,
+            "allowedAnswers": [[[28]]],
+            "answerUnit": "days"
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 5,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>If 5 zips equal 4 squawks, and 3 squawks equal 5 bangs, how many zips equal 12 bangs?</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "possibleAnswerSets": 1,
+            "requiredAnswerSets": 1,
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[9]]],
+            "answerUnit": "zips"
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 6,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Aditya writes down some of his favorite numbers. Every number on his list is a prime number, and no two numbers on his list share any digits in common. What is the greatest possible number of terms in Aditya’s list?</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["0000"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[6]]],
+            "answerUnit": "numbers"
+          }
+        ]
+      },
+      {
+        "autoContent": false,
+        "content": "<p>Aditya realized he can make this list in two ways. Write down all the numbers on any one of his lists.</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": false,
+        "repeatable": true,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 2,
+        "displayRepeatCount": true,
+        "answerKeys": [
+          {
+            "answerCodes": ["1111", "2222", "3333", "4444", "5555", "6666"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "inputType": "COMBINED_INPUT",
+            "allowedAnswers": [
+              [[2], [3], [5], [7], [41], [89]],
+              [[2], [3], [5], [7], [61], [89]]
+            ]
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 7,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Let a trime be defined as a three-digit integer for which any two digits of the integer, ordered as they appear in the original integer, form a two-digit prime number. For example, 137 is a trime because 13, 17 and 37 are all prime numbers. However, 211 is not a trime because 21 is not prime. What is the greatest trime?",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[731]]],
+            "answerUnit": ""
+          }
+        ]
+      }
+    ],
+    "answerExplanation": "<p>Let us make a list of all possible 2-digit prime numbers:</p><p>11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97</p><p>Since we want to form the greatest trime let us start with 97. We can combine 97 with 71, 73 and 79 to form 3 numbers 971, 973 and 979. Now, 91, 93 and 99 are not prime</p><p>Next let us try 89. We can combine 89 with 97 form 897. Buy 87 is not a prime</p>Continuing thus, we find the greatest trime is 731"
+  },
+  {
+    "questionId": 8,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": ".fitted-div:focus {outline: none;border: none;} .tbl-blue {border: 3px solid #b7e7fb;width:auto} .tbl-blue td {width:60px;height:60px;padding:5px;text-align:center} .reg-border-left {border-left:3px solid #b7e7fb} .reg-border-right {border-right:3px solid #b7e7fb} .reg-border-top {border-top:3px solid #b7e7fb} .reg-border-bottom {border-bottom:3px solid #b7e7fb} .em-border-left {border-left:3px solid #4394cc !important} .em-border-right {border-right:3px solid #4394cc !important} .em-border-top {border-top:3px solid #4394cc !important} .em-border-bottom {border-bottom:3px solid #4394cc !important}",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>In the 5 x 5 grid shown, each row and each column is to contain the integers 1 through 5 exactly once with one integer per cell. The sum of the two integers in each outlined pair of cells is 5. Fill the empty cells</p><table class='tbl-blue'><tr><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='aaaa' class='fitted-div'></div></td><td class='reg-border-left reg-border-right reg-border-top'><div contentEditable='true' answer-code='bbbb' class='fitted-div'></div></td><td class='reg-border-left reg-border-top'><div class='fitted-div'>2</div></td><td class='em-border-left em-border-top em-border-right reg-border-bottom'><div contentEditable='true' answer-code='dddd' class='fitted-div'></div></td><td class='reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='eeee' class='fitted-div'></div></td></tr><tr><td class='reg-border-left reg-border-top reg-border-bottom'><div class='fitted-div'>1</div></td><td class='em-border-left em-border-top em-border-bottom reg-border-right'><div contentEditable='true' answer-code='gggg' class='fitted-div'></div></td><td class='em-border-bottom em-border-top em-border-right'><div contentEditable='true' answer-code='hhhh' class='fitted-div'></div></td><td class='em-border-bottom em-border-right'><div contentEditable='true' answer-code='iiii' class='fitted-div'></div></td><td class='reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='jjjj' class='fitted-div'></div></td></tr><tr><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='kkkk' class='fitted-div'></div></td><td class='reg-border-left reg-border-bottom'><div contentEditable='true' answer-code='llll' class='fitted-div'></div></td><td class='em-border-left em-border-right'><div contentEditable='true' answer-code='mmmm' class='fitted-div'></div></td><td class='reg-border-right'><div contentEditable='true' answer-code='nnnn' class='fitted-div'></div></td><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div class='fitted-div'>1</div></td></tr><tr><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='pppp' class='fitted-div'></div></td><td class='reg-border-left reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='qqqq' class='fitted-div'></div></td><td class='em-border-left em-border-bottom em-border-right reg-border-top'><div contentEditable='true' answer-code='rrrr' class='fitted-div'></div></td><td class='em-border-top em-border-right em-border-left reg-border-bottom'><div contentEditable='true' answer-code='ssss' class='fitted-div'></div></td><td class='reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='tttt' class='fitted-div'></div></td></tr><tr><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='uuuu' class='fitted-div'></div></td><td class='reg-border-left reg-border-right reg-border-top reg-border-bottom'><div contentEditable='true' answer-code='vvvv' class='fitted-div'></div></td><td><div contentEditable='true' answer-code='wwww' class='fitted-div'></div></td><td class='em-border-left em-border-bottom em-border-right'><div contentEditable='true' answer-code='xxxx' class='fitted-div'></div></td><td><div>3</div></td></tr></table>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["aaaa"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[3]]]
+          },
+          {
+            "answerCodes": ["bbbb"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[5]]]
+          },
+          {
+            "answerCodes": ["dddd"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[1]]]
+          },
+          {
+            "answerCodes": ["eeee"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[4]]]
+          },
+          {
+            "answerCodes": ["gggg"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[2]]]
+          },
+          {
+            "answerCodes": ["hhhh"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[3]]]
+          },
+          {
+            "answerCodes": ["iiii"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[4]]]
+          },
+          {
+            "answerCodes": ["jjjj"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[5]]]
+          },
+          {
+            "answerCodes": ["kkkk"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[2]]]
+          },
+          {
+            "answerCodes": ["llll"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[3]]]
+          },
+          {
+            "answerCodes": ["mmmm"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[4]]]
+          },
+          {
+            "answerCodes": ["nnnn"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[5]]]
+          },
+          {
+            "answerCodes": ["pppp"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[5]]]
+          },
+          {
+            "answerCodes": ["qqqq"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[4]]]
+          },
+          {
+            "answerCodes": ["rrrr"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[1]]]
+          },
+          {
+            "answerCodes": ["ssss"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[3]]]
+          },
+          {
+            "answerCodes": ["tttt"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[2]]]
+          },
+          {
+            "answerCodes": ["uuuu"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[4]]]
+          },
+          {
+            "answerCodes": ["vvvv"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[1]]]
+          },
+          {
+            "answerCodes": ["wwww"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[5]]]
+          },
+          {
+            "answerCodes": ["xxxx"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[[2]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 9,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Name any 3 cities in France</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "displayRepeatCount": false,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "inputWidth": "34ch",
+        "content": "",
+        "repeatable": true,
+        "requiredRepeats": 3,
+        "maxPossibleRepeats": 5,
+        "displayRepeatCount": true,
+        "answerKeys": [
+          {
+            "answerCodes": ["0000"],
+            "answerUnit": "",
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "allowedAnswers": [[["Paris", "Pari"]], [["Lyon"]], [["Marseille"]], [["Nice"]], [["Toulouse"]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 10,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Select any 2 sets of 3 distinct numbers from the following list that add up to 15: 1, 2, 3, 4, 5, 6, 7, 8</p>",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": true,
+        "requiredRepeats": 2,
+        "maxPossibleRepeats": 4,
+        "displayRepeatCount": true,
+        "answerKeys": [
+          {
+            "answerCodes": ["0000", "1111", "2222"],
+            "caseSensitive": false,
+            "ignoreSpaces": false,
+            "matchInAnyOrder": true,
+            "allowedAnswers": [
+              [["2"], ["5"], ["8"]],
+              [["3"], ["4"], ["8"]],
+              [["3"], ["5"], ["7"]],
+              [["4"], ["5"], ["6"]]
+            ],
+            "answerExplanation":"2 + 5 + 8 = 15, 3 + 4 + 8 = 15, 3 + 5 + 7 = 15, 4 + 5 + 6 = 15"
+          }
+        ]
+      }
+    ],
+    "explanation": "",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 2,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomCSS": "",
+    "questionCustomCSS": "",
+    "focusFirstInput": false,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Add:</p><table class='embed-tbl-grid'><tr><td>&nbsp;</td><td>&nbsp;</td><td style='text-align:center'>T</td><td style='text-align:center'>O</td></tr><tr><td>&nbsp;</td><td style='text-align: center'><input class='form-control' size='1' type='text' style='border-radius: 50%; text-align:center' id='carryForwardHundreds' name='hmsh' answer-code='hmsh' oninput='document.getElementById('hundredsTotal').focus();' /></td><td style='text-align: center'><input class='form-control' size='1' type='text' style='border-radius: 50%;text-align:center' id='carryForwardTens' name='runa' answer-code='runa' oninput='document.getElementById('tensTotal').focus();' /></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td style='text-align: center'>6</td><td style='text-align: center'>4</td></tr><tr><td style='font-size: 1.2em'>+</td><td>&nbsp;</td><td style='text-align: center'>4</td><td style='text-align: center'>8</td></tr><tr><td >&nbsp;</td><td ><input class='form-control' size='1' type='text' id='hundredsTotal' name='aash' answer-code='aash' style='text-align: center' /></td><td ><input class='form-control' size='1' type='text' id='tensTotal' oninput='document.getElementById('carryForwardHundreds').focus();' name='aarv' answer-code='aarv' style='text-align: center' /></td><td ><input class='form-control' size='1' type='text' id='unitsTotal' oninput='document.getElementById('carryForwardTens').focus();' autofocus style='text-align: center' name='tnya' answer-code='tnya' /></td></tr></table>",
+        "answerKeys": [
+          {
+            "answerCodes": ["hmsh"],
+            "allowedAnswers": [[[1]]],
+            "caseSensitive": false,
+            "ignoreSpaces": true
+          },
+          {
+            "answerCodes": ["runa"],
+            "allowedAnswers": [[[1]]],
+            "caseSensitive": false,
+            "ignoreSpaces": true
+          },
+          {
+            "answerCodes": ["aash"],
+            "allowedAnswers": [[[1]]],
+            "caseSensitive": false,
+            "ignoreSpaces": true
+          },
+          {
+            "answerCodes": ["aarv"],
+            "allowedAnswers": [[[1]]],
+            "caseSensitive": false,
+            "ignoreSpaces": true
+          },
+          {
+            "answerCodes": ["tnya"],
+            "allowedAnswers": [[[2]]],
+            "caseSensitive": false,
+            "ignoreSpaces": true
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  }
+]

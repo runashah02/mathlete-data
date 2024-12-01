@@ -1,0 +1,74 @@
+[            {
+    "questionId": 3,
+    "questionType": "ORDER_REARRANGEMENT",
+    "shuffleAnswerChoices": true,
+    "exerciseCustomCSS": ".draggable {padding-left:40px !important;padding-right:40px !important}",
+    "parts": [
+        {
+            "autoContent": false,
+            "content": "<p>Rearrange the following numbers in ascending order</p>",
+            "hideInQuestion": false,
+            "hideInCorrectAnswers": true,
+            "hideInStudentAnswers": true
+        },
+        {
+            "autoContent": true,
+            "answerKeysPerRow": 4,
+            "showInExplanation": true,
+            "repeatable": false,
+            "maxPossibleRepeats": 1,
+            "requiredRepeats": 1,
+            "hideInQuestion": false,
+            "hideInCorrectAnswers": false,
+            "hideInStudentAnswers": false,
+            "answerKeys": [
+                {
+                    "answerCodes": ["drp1"],
+                    "initialAnswers": [[["6666"]]],
+                    "allowedAnswers": [[["1111"]]]
+                },
+                {
+                    "answerCodes": ["drp2"],
+                    "initialAnswers": [[["4444"]]],
+                    "allowedAnswers": [[["4444"]]]
+                },
+                {
+                    "answerCodes": ["drp3"],
+                    "initialAnswers": [[["1111"]]],
+                    "allowedAnswers": [[["6666"]]]
+                },
+                {
+                    "answerCodes": ["drp4"],
+                    "initialAnswers": [[["8888"]]],
+                    "allowedAnswers": [[["8888"]]]
+                }
+            ]
+        },
+        {
+            "autoContent": true,
+            "hideInQuestion": true,
+            "hideInCorrectAnswers": true,
+            "hideInStudentAnswers": true,
+            "answerKeys": [
+                {
+                    "answerCodes": ["6666"],
+                    "content": "<div style='padding:10px 40px'>6</div>"
+                },
+                {
+                    "answerCodes": ["4444"],
+                    "content": "<div style='padding:10px 40px'>4</div>"
+                },
+                {
+                    "answerCodes": ["1111"],
+                    "content": "<div style='padding:10px 40px'>1</div>"
+                },
+                {
+                    "answerCodes": ["8888"],
+                    "content": "<div style='padding:10px 40px'>8</div>"
+                }
+            ]
+        }
+    ],
+    "answerExplanation": "<p>Find the smallest number. The smallest number is the one that comes first in counting. The smallest number is 1. Drag 1 to the leftmost slot (if it is not already there) and drop</p><p>With 1 correctly placed, find the smallest among the remaining numbers. The smallest number is 4. Drag 4 to the slot second from left (if it is not already there) and drop</p><p>Continue till all numbers are correctly reorganized</p>"
+}
+]

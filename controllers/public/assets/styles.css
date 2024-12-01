@@ -1,0 +1,335 @@
+/* Import Lato from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+/* Apply Lato to the body tag */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 12pt !important;
+  margin: 0;
+  padding: 0px !important;
+}
+
+a, .router-link {
+  text-decoration: none;
+}
+
+main {
+  margin: 0;
+  padding: 0px;
+}
+
+.container-fluid-flex {
+  display: flex;
+  /* height: 100vh ;*/
+  overflow: hidden;
+  padding:0px;
+}
+
+label {
+  font-size:0.9em !important;
+  font-weight:bold;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.6em !important;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+h2 {
+  font-size:1.4em !important;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:bold;
+}
+
+h3 {
+  font-size:1.2em !important;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:bold;	
+}
+
+h4 {
+  font-size:1em !important;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:bold;	
+}
+
+h5 {
+    font-size:1.2em !important;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:normal;	
+}
+
+h6{
+    font-size:1.1em !important;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:normal !important;
+    color:#555555 !important;	
+}
+
+
+.form-control {
+  font-size:1.1em !important;
+}
+
+.btn {
+  font-size:1.1em !important;
+}
+
+.page-content {
+	min-height: 100vh;
+	background-color: #fff;
+	padding: 0 20px;
+	width: 100%;
+	overflow-x: auto;
+}
+
+.page-content-centered {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.search-panel {
+	
+	border-bottom: 1px solid lightgray;
+	padding-top: 1rem!important;
+	
+}
+
+.form-box {
+  width: 480px;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.badge {
+  border: 1px solid rgb(69, 85, 96);
+  color: rgb(69, 85, 96);
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.simple-blue-link{
+  text-decoration:none;
+  color:#1976d2;  
+  cursor:pointer;
+}
+
+.filter-row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid lightgray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 999; /* higher z-index than other elements */
+}
+
+.transparent-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* semi-transparent black */
+  z-index: 999; /* higher z-index than other elements */
+}
+
+.fixed-width-content {
+  max-width: 1000px;
+}
+
+.title-row {
+height: 68px;
+padding-top: 15px;
+vertical-align: middle;
+border-bottom: 1px solid lightgray;
+}
+
+.filter-count-div {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(204, 223, 255);
+  border-radius: 2px;
+  display: inline-flex;
+  font-size: 12px;
+  height: 20px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 8px;
+  width: 20px;
+}
+.label-btn {
+  font-weight: bold;
+  line-height: inherit;
+  -webkit-box-align: center;
+  align-items: center;
+  background-position: center top;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  height: 2.25rem;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px 16px;
+  transition: all 0.3s ease 0s;
+  background-color: transparent;
+  border: 1px solid rgb(13, 100, 242);
+  color: rgb(12, 96, 233);
+  margin-right: 10px;
+}
+.label-btn:hover {
+  background-color: rgb(247, 250, 255);
+  border: 1px solid rgb(204, 223, 255);
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f7faff;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #e6f0ff;
+}
+
+.notification {
+  background-color: #fff5f1;
+  border:1px solid #FD9D78;
+  font-size:1rem;
+  margin-bottom:20px;
+  border-radius:4px;
+  height:50px;
+  line-height:50px;
+  vertical-align: middle;
+  width:fit-content !important;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.notification a{
+  text-decoration:none;
+}
+
+.selected-filter-item-outer {
+  display: inline-flex;
+  flex-flow: row wrap;
+  gap: 16px;
+  padding: 0px;
+  margin-right: 16px;
+}
+
+.selected-filter-item {
+  background-color: rgb(227, 230, 234);
+  border-radius: 4px;
+  color: rgb(4, 28, 68);
+  display: flex;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.activeSortLink,
+.visibleColumnLink {
+  font-weight: bold;
+}
+
+.activeSortLink:before,
+.visibleColumnLink:before {
+  content: "✔ ";
+  margin-right: 10px;
+}
+.selected-filter-item-content {
+}
+
+.subtitle-row {
+	color: #041c44;
+	font-size: 1.1em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: lightgray;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+div.error {
+  background-color: #fef3f1;
+  border-radius: 6px;
+  color: red;
+  padding: 5px;
+}
+
+.export-link {
+	color: #555555;
+	font-size: 0.9em;
+	margin-left: 30px;
+	padding-left: 30px;
+	border-left: 1px solid lightgray;
+	cursor: pointer;
+}
+/*
+table {
+  table-layout: auto;
+  width: 100%;
+}
+tr td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid lightgray;
+  min-width: 50px;
+  max-width: 500px;
+}
+
+thead {
+  position: sticky !important;
+  top: 0;
+}
+thead th {
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+*/
+@media screen and (max-width: 767px) {
+  .for-large-screens {
+    display: none;
+  }
+}
+
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0;
+}
+

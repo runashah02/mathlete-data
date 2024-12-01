@@ -1,0 +1,260 @@
+[
+  {
+    "questionId": 0,
+    "questionType": "DRAG_AND_DROP",
+    "activeDroppableClass": "active-droppable",
+    "transferType": "COPY",
+    "exerciseCustomCSS": "",
+    "parts": [
+      {
+        "autoContent": 0,
+        "content": "<p>Match the gingerbread men to the trays</p>",
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "displayRepeatCount": 0
+      },
+      {
+        "autoContent": 1,
+        "answerKeysPerRow": 4,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "displayRepeatCount": 0,
+        "answerKeys": [
+          {
+            "answerCodes": ["0000"],
+            "allowedAnswers": [[["vibh"]]],
+            "dropAreaLabel": "6",
+            "dropZonesPerRow": 1
+          },
+          {
+            "answerCodes": ["1111"],
+            "allowedAnswers": [[["ytsh"]]],
+            "dropAreaLabel": "8",
+            "dropZonesPerRow": 1
+          },
+          {
+            "answerCodes": ["2222"],
+            "allowedAnswers": [[["abha"]]],
+            "dropAreaLabel": "1",
+            "dropZonesPerRow": 1
+          },
+          {
+            "answerCodes": ["3333"],
+            "allowedAnswers": [[["ravi"]]],
+            "dropAreaLabel": "4",
+            "dropZonesPerRow": 1
+          }
+        ]
+      },
+      {
+        "autoContent": 1,
+        "answerKeysPerRow": 4,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "displayRepeatCount": 0,
+        "answerKeys": [
+          {
+            "answerCodes": ["abha"],
+            "content": "<img src='/assets/gingerbread-man/1.svg' width='100' height='100'/>",
+            "answerExplanation": "This gingerbread man has 1 sprinkle. Therefore it should be in slot for number 1"
+          },
+          {
+            "answerCodes": ["vibh"],
+            "content": "<img src='/assets/gingerbread-man/6.svg' width='100' height='100'/>",
+            "answerExplanation": "This gingerbread man has 6 sprinkles. Therefore it should be in slot for number 6"
+          },
+          {
+            "answerCodes": ["ravi"],
+            "content": "<img src='/assets/gingerbread-man/4.svg' width='100' height='100'/>",
+            "answerExplanation": "This gingerbread man has 4 sprinkles. Therefore it should be in slot for number 4"
+          },
+          {
+            "answerCodes": ["ytsh"],
+            "content": "<img src='/assets/gingerbread-man/8.svg' width='100' height='100'/>",
+            "answerExplanation": "This gingerbread man has 8 sprinkles. Therefore it should be in slot for number 8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": 1,
+    "questionType": "DRAG_AND_DROP",
+    "activeDroppableClass": "active-droppable",
+    "transferType": "COPY",
+
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Draw the next 3 figures that follow</p><div style='display: flex; align-items: center;'><div class='card-slot'><img src='/assets/patterns/diamonds.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/clubs.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/hearts.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/spades.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/diamonds.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/clubs.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/hearts.svg' width='30' /></div><div class='card-slot'><img src='/assets/patterns/spades.svg' width='30' /></div><div answer-code='semi' class='empty-card-slot'></div><div answer-code='crcl' class='empty-card-slot'></div><div answer-code='trng' class='empty-card-slot'></div></div>",
+        "repeatable": false,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["semi"],
+            "allowedAnswers": [[["vnsh"]]]
+          },
+          {
+            "answerCodes": ["crcl"],
+            "allowedAnswers": [[["pvts"]]]
+          },
+          {
+            "answerCodes": ["trng"],
+            "allowedAnswers": [[["prth"]]]
+          }
+        ]
+      },
+      {
+        "autoContent": true,
+        "answerKeysPerRow": 4,
+        "repeatable": false,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnsh"],
+            "content": "<img src='/assets/patterns/diamonds.svg' width='30' height='30' />"
+          },
+          {
+            "answerCodes": ["avni"],
+            "content": "<img src='/assets/patterns/spades.svg' width='30' height='30' />"
+          },
+          {
+            "answerCodes": ["prth"],
+            "content": "<img src='/assets/patterns/hearts.svg' width='30' height='30' />"
+          },
+          {
+            "answerCodes": ["pvts"],
+            "content": "<img src='/assets/patterns/clubs.svg' width='30' height='30' />"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": 2,
+    "questionType": "DRAG_AND_DROP",
+    "transferType": "COPY",
+    "exerciseCustomCSS": ".drop-area {grid-gap:20px; padding: 10px 20px; border-radius: 8px; border: 2px solid transparent; border-color: #b7e7fb;}",
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>Place all cities in the correct countries</p>",
+        "repeatable": false,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1
+      },
+      {
+        "autoContent": true,
+        "answerKeysPerRow": 2,
+        "repeatable": false,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["0000", "1111", "2222", "3333"],
+            "allowedAnswers": [[["aaaa"], ["cccc"], [""], [""]]],
+            "dropAreaLabel": "France",
+            "dropZonesPerRow": 2,
+            "matchInAnyOrder": true
+          },
+          {
+            "answerCodes": ["4444", "5555", "6666", "7777"],
+            "allowedAnswers": [[["bbbb"], ["dddd"], [""], [""]]],
+            "dropAreaLabel": "United Kingdom",
+            "dropZonesPerRow": 2,
+            "matchInAnyOrder": true
+          }
+        ]
+      },
+      {
+        "autoContent": true,
+        "answerKeysPerRow": 4,
+        "repeatable": false,
+        "maxPossibleRepeats": 1,
+        "requiredRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["aaaa"],
+            "content": "<span class='insert-content'>Paris</span>"
+          },
+          {
+            "answerCodes": ["bbbb"],
+            "content": "<span class='insert-content'>London</span>"
+          },
+          {
+            "answerCodes": ["cccc"],
+            "content": "<span class='insert-content'>Nice</span>"
+          },
+          {
+            "answerCodes": ["dddd"],
+            "content": "<span class='insert-content'>Bath</span>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questionId": 3,
+    "questionType": "DRAG_AND_DROP",
+    "transferType": "MOVE",
+
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p>There are 5 bags of coins with 10, 20, 30, 40 and 50 gold coins</p><p>Put the bags of coins into the 2 chests so that the bigger chest has twice as many coins as the smaller chest!</p><p>You cannot open the bags and take the coins out!</p>"
+      },
+      {
+        "autoContent": true,
+        "answerKeysPerRow": 2,
+        "repeatable": true,
+        "maxPossibleRepeats": 3,
+        "requiredRepeats": 1,
+        "answerKeys": [
+          {
+            "answerKeyId": 1,
+            "answerCodes": ["0000", "1111", "2222", "3333"],
+            "allowedAnswers": [[["0010"], ["0040"], [""], [""]], [["0020"], ["0030"], [""], [""]], [["0050"], [""], [""], [""]]],
+            "dropAreaLabel": "Smaller Chest",
+            "dropZonesPerRow": 2
+          },
+          {
+            "answerKeyId": 2,
+            "answerCodes": ["4444", "5555", "6666", "7777"],
+            "allowedAnswers": [[["0020"], ["0030"], ["0050"], [""]],[["0010"], ["0040"], ["0050"], [""]], [["0010"], ["0020"], ["0030"], ["0040"]]],
+            "dropAreaLabel": "Larger Chest",
+            "answerLinkedWith": 1,
+            "dropZonesPerRow": 2
+          }
+        ]
+      },
+      {
+        "autoContent": true,
+        "answerKeysPerRow": 5,
+        "answerKeys": [
+          {
+            "answerCodes": ["0010"],
+            "content": "10"
+          },
+          {
+            "answerCodes": ["0020"],
+            "content": "20"
+          },
+          {
+            "answerCodes": ["0030"],
+            "content": "30"
+          },
+          {
+            "answerCodes": ["0040"],
+            "content": "40"
+          },
+          {
+            "answerCodes": ["0050"],
+            "content": "50"
+          }
+        ]
+      }
+    ]
+  }
+]

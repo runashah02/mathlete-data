@@ -1,0 +1,52 @@
+[
+  {
+    "variation": 1,
+    "slabs": [
+      { "min": 1, "max": 5, "count": 10, "rangeDesc": "1-5" },
+      { "min": 1, "max": 9, "count": 10, "rangeDesc": "1-9" },
+      { "min": 10, "max": 99, "count": 80, "rangeDesc": "2-digit" }
+    ],
+    "question": {
+      "questionId": 0,
+      "questionType": "MULTIPLE_CHOICE",
+      "exerciseCustomCSS": "",
+      "questionCustomCSS": "",
+      "focusFirstInput": 1,
+      "moduleId": 2,
+      "numberRangeMin": 0,
+      "numberRangeMax": 0,
+      "parts": [
+        {
+          "autoContent": 0,
+          "content": "<p><span class='audio-enabled'>Aayush and Aarav bought some candies. Aayush bought 3 candies. Aarav bought more candies than Aayush. How many candies did Aarav buy? Pick a possible answer</span></p>",
+          "requiredRepeats": 1,
+          "maxPossibleRepeats": 1,
+          "displayRepeatCount": 0
+        },
+        {
+          "autoContent": 1,
+          "content": 0,
+          "requiredRepeats": 1,
+          "maxPossibleRepeats": 1,
+          "displayRepeatCount": 0,
+          "answerKeys": [
+            {
+              "answerCodes": ["abc1"],
+              "content": "2",
+              "allowedAnswers": [[[0]]],
+              "answerExplanation": "<p><span class='audio-enabled'>Aarav bought more candies than Aayush, 2 is less than 3. It is not a correct possible value</span></p>"
+            },
+            {
+              "answerCodes": ["abc2"],
+              "content": "4",
+              "allowedAnswers": [[[0]]],
+              "answerExplanation": "Aarav bought more candies than Aayush, 4 is greater than 3. It is a correct possible value"
+            }
+          ]
+        }
+      ],
+      "explanation": "STATIC",
+      "answerExplanation": "<p><span class='audio-enabled'>Since Aayush bought 3 candies, Aarav must have bought a number greater than 3. Possible answers include any number greater than 3</span>.</p>"
+    }
+  }
+]

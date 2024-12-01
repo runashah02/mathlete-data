@@ -1,0 +1,869 @@
+<template>
+  <div :id="id">
+    <div v-if="question.exerciseStyles" v-html="styleTag"></div>
+    <div class="question-card" v-if="show != 'EXPLANATION'">
+      <div class="row" v-if="show == 'QUESTION' && question.groupTitle">
+        <div class="col-12" v-html="question.groupTitle"></div>
+      </div>
+      <div class="row">
+        <div class="col-12" v-html="question.questionStmt"></div>
+      </div>
+      <div
+        class="row mt-3"
+        v-for="setIndex in requiredNumberOfAnswerSets"
+        :key="setIndex"
+        :id="'answer-set-' + setIndex"
+      >
+        <div class="col-12" :style="`max-width: ${gridWidth};`">
+          <div
+            :class="['option-grid', question.optionsGridStyleClass]"
+            :style="`grid-template-columns: repeat(auto-fit, ${maxWidth});`"
+          >
+            <div
+              v-for="(option, index) in question.answerOptions"
+              :key="option.answerCode"
+              v-html="option.optionContent"
+              :class="[
+                'answer-option',
+                option.overrideOptionsStyle
+                  ? option.overrideOptionsStyle
+                  : question.optionsStyleClass,
+              ]"
+              @click="toggleSelection"
+              :option-index="index"
+              :data-name="option.answerCode"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      <div class="row">
+        <div v-if="this.question.explanation == 'STATIC'">
+          <div class="col-12" v-html="question.answerExplanation"></div>
+          <div v-if="question.displayCorrectOptionNos" class="mt-8">
+            <div v-if="correctOptionNos.length == 1">
+              Therefore, option {{ correctOptionNos }} is the correct option
+            </div>
+            <div v-else>
+              Therefore, options {{ correctOptionNos }} are the correct options
+            </div>
+          </div>
+        </div>
+        <div class="col-12" v-else>
+          <div
+            class="mt-8"
+            v-for="(option, index) in question.answerOptions"
+            :key="index"
+          >
+            <div
+              :class="['answer-option', question.optionsStyleClass]"
+              v-html="option.optionContent"
+            ></div>
+            <div>
+              {{ option.answerExplanation }}
+            </div>
+          </div>
+          <div class="mt-8" v-if="question.displayCorrectOptionNos">
+            <div v-if="correctOptionNos.length == 1">
+              Therefore, option {{ correctOptionNos }} is the correct option
+            </div>
+            <div v-else>
+              Therefore, options {{ correctOptionNos }} are the correct options
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    id: {
+      type: String,
+      required: true,
+      description: "A unique id for the div displaying the question",
+    },
+    question: {
+      type: Object,
+      required: true,
+    },
+    show: {
+      type: String,
+      required: false,
+      default: "QUESTION",
+      description:
+        "QUESTION, CORRECT_ANSWERS, STUDENT_ANSWERS, SUPPLIED_ANSWERS, EXPLANATION",
+    },
+    answers: {
+      type: Array,
+      required: false,
+      description:
+        "An array of objects like [{answerCode: 'a#4r', answer: '3'},...] for each answerCode (blank) in the question. Required if show == 'SUPPLIED_ANSWERS'",
+    },
+  },
+
+  computed: {
+    correctOptionNos() {
+      let correctOptionNos = this.question.answers[0]
+        .map((answer, index) => {
+          if (answer.isCorrect) return index + 1;
+          return null;
+        })
+        .filter((index) => index !== null);
+      return correctOptionNos;
+    },
+
+    styleTag() {
+      // Wrap the dynamic CSS inside a <style> tag
+      return `<style>${this.question.exerciseStyles}</style>`;
+    },
+  },
+
+  data() {
+    return {
+      maxWidth: "auto",
+      gridWidth: "auto",
+      requiredNumberOfAnswerSets:
+        this.question.requiredNumberOfAnswerSets &&
+        this.question.requiredNumberOfAnswerSets > 0
+          ? this.question.requiredNumberOfAnswerSets
+          : 1,
+    };
+  },
+
+  mounted() {
+    const answers = this.getAnswersByMode(this.show);
+    if (answers) this.fillAnswers(answers);
+    this.setEqualWidth();
+    //    window.addEventListener("resize", this.setEqualWidth);
+  },
+
+  beforeUnmount() {
+    //window.removeEventListener("resize", this.setEqualWidth);
+  },
+
+  methods: {
+    getAnswersByMode(mode) {
+      let answers = null;
+      switch (mode) {
+        case "QUESTION":
+          break;
+        case "CORRECT_ANSWERS":
+          answers = this.question.answers.map((answerSet) => {
+            return answerSet.map((a) => {
+              return {
+                answerCode: a.answerCode,
+                answer: a.isCorrect,
+              };
+            });
+          });
+          break;
+        case "STUDENT_ANSWERS":
+          answers = this.question.studentAnswers;
+          break;
+        case "SUPPLIED_ANSWERS":
+          answers = this.answers;
+          break;
+        default:
+          break;
+      }
+      return answers;
+    },
+
+    setEqualWidth() {
+      const mainDiv = document.querySelector("#" + this.id);
+      const options = mainDiv.querySelectorAll(".answer-option");
+      let maxWidth = 0;
+      let gridGap = 0;
+      let optionBorderWidth = 0;
+
+      const optionGrids = mainDiv.querySelectorAll(".option-grid");
+      optionGrids.forEach((grid) => {
+        const gridStyles = window.getComputedStyle(grid);
+        gridGap = parseFloat(gridStyles.getPropertyValue("gap"));
+        grid.style.display = "block";
+      });
+
+      options.forEach((option) => {
+        const optionStyles = window.getComputedStyle(option);
+        optionBorderWidth = parseFloat(
+          optionStyles.getPropertyValue("border-width")
+        );
+        option.style.width = "auto";
+        option.style.display = "inline-block";
+        const optionWidth = option.offsetWidth;
+        if (optionWidth > maxWidth) {
+          maxWidth = optionWidth;
+        }
+      });
+      optionGrids.forEach((grid) => {
+        grid.style.display = "grid";
+      }); // Reset widths to auto to measure natural width
+
+      this.maxWidth = `${maxWidth}px`;
+      this.gridWidth = `${
+        (maxWidth + gridGap + optionBorderWidth * 2) *
+          this.question.optionsGridCols +
+        gridGap * 2 +
+        10
+      }px`;
+
+      //alert(this.maxWidth);
+      //alert(this.gridWidth);
+    },
+    getStudentAnswerSets () {
+      let studentAnswerSets = [];
+      let mainDiv = document.querySelector("#" + this.id);
+
+      for (let setIndex = 0; setIndex < this.requiredNumberOfAnswerSets; setIndex++) {
+        let answerSetDiv = mainDiv.querySelector(`.answer-set-${setIndex}`)
+        let setAnswers = [];
+
+        this.question.answerOptions.forEach((option) => {
+          let element = answerSetDiv.querySelector(`[data-name='${option.answerCode}']`);
+            setAnswers.push({"answerCode": option.answerCode, "answer": element.classList.contains("selected")});
+        });
+
+        // Check for distinct sets and required number of sets
+        if (setAnswers.length > 0 && !this.isDuplicateSet(setAnswers, studentAnswerSets)) {
+          studentAnswerSets.push(setAnswers);
+        }
+      }
+      return studentAnswerSets;
+    },
+
+    checkAnswers() {
+      let allCorrect = true;
+
+      let studentAnswerSets = this.getStudentAnswerSets();
+      if (studentAnswerSets.length !== this.requiredNumberOfAnswerSets) {
+        allCorrect = false;
+      }
+
+      return {
+        allCorrect,
+        studentAnswers: studentAnswerSets,
+      };
+    },
+
+    isDuplicateSet(newSet, existingSets) {
+      for (let set of existingSets) {
+        if (JSON.stringify(set) === JSON.stringify(newSet)) {
+          return true; // Set already exists
+        }
+      }
+      return false;
+    },
+
+    toggleSelection(evt) {
+      let option = evt.target;
+      while (!option.classList.contains("answer-option")) {
+        option = option.parentNode;
+      }
+      if (!option) return;
+      if (this.question.questionType == "MULTIPLE_SELECT") {
+        option.classList.toggle("selected");
+      } else if (this.question.questionType == "MULTIPLE_CHOICE") {
+        let mainDiv = document.querySelector("#" + this.id);
+        let options = mainDiv.querySelectorAll(".answer-option");
+        options.forEach((o) => {
+          o.classList.remove("selected");
+        });
+        option.classList.add("selected");
+      }
+    },
+
+    fillAnswers(answers) {
+      answers.forEach((ac) => {
+        const mainDiv = document.querySelector("#" + this.id);
+        const input = mainDiv.querySelector(`[data-name='${ac.answerCode}']`);
+        if (ac.answer) {
+          input.classList.add("selected");
+        } else {
+          input.classList.remove("selected");
+        }
+      });
+    },
+  },
+};
+</script>
+
+checkAnswers() {
+  let allCorrect = true;
+  let answers = [];
+
+  let mainDiv = document.querySelector("#" + this.id);
+  this.question.answers.forEach((a) => {
+    let element = mainDiv.querySelector(`[data-name='${a.answerCode}']`);
+    let isSelected = element.classList.contains("selected");
+
+    answers.push({
+      answerCode: a.answerCode,
+      answer: isSelected,
+      correctAnswer: a.isCorrect,
+    });
+
+    if ((a.isCorrect && !isSelected) || (!a.isCorrect && isSelected)) {
+      allCorrect = false;
+    }
+  });
+  return { allCorrect, studentAnswers: answers };
+},
+
+<template>
+  <div :id="id">
+    <div v-if="question.exerciseStyles" v-html="styleTag"></div>
+    <div class="question-card" v-if="show != 'EXPLANATION'">
+      <div class="row group-title-row" v-if="question.groupTitle">
+        <div class="col-12" v-html="question.groupTitle"></div>
+      </div>
+      <div class="row question-stmt-row">
+        <div class="col-12" v-html="question.questionStmt"></div>
+      </div>
+      <!-- Options -->
+
+      <div class="row option-grid-row mt-3">
+        <div class="col-12" :style="`max-width: ${gridWidth};`">
+          <div
+            :class="['option-grid', question.optionsGridStyleClass]"
+            :style="`grid-template-columns: repeat(auto-fit, ${maxWidth});`"
+          >
+            <button
+              v-for="option in question.answerOptions"
+              :key="option.answerCode"
+              :data-name="option.answerCode"
+              v-html="option.optionContentPrepend + option.optionContent"
+              type="button"
+              :class="['answer-option', question.optionsStyleClass]"
+            ></button>
+            <button
+              :class="['answer-option', question.optionsStyleClass]"
+              type="button"
+              @click="removeLastIn"
+              v-if="question.removeLastInBtn"
+            >
+              <span style="margin-right: 20px">1</span
+              ><img src="/assets/ux/delete.svg" width="60" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      <div class="row">
+        <div>
+          <div class="col-12" v-html="question.answerExplanation"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    id: {},
+    question: {},
+    show: {
+      type: String,
+      required: false,
+      default: "QUESTION",
+    },
+    answers: {},
+  },
+
+  watch: {
+    currentAnswers: {
+      handler() {
+        this.fillAnswers(this.currentAnswers);
+        this.activeDroppable = this.firstEmptyDroppable();
+      },
+      deep: true,
+    },
+
+    activeDroppable: {
+      handler() {
+        if (this.question.activeDroppableClass) {
+          const mainDiv = document.querySelector("#" + this.id);
+          const droppableDataNames = [
+            ...new Set(this.question.answers.map((a) => a.answerCode)),
+          ];
+          droppableDataNames.forEach((ddn) => {
+            let elem = mainDiv.querySelector("[data-name='" + ddn + "']");
+            elem.classList.remove(this.question.activeDroppableClass);
+          });
+
+          if (this.activeDroppable) {
+            this.activeDroppable.classList.add(
+              this.question.activeDroppableClass
+            );
+          }
+        }
+      },
+    },
+  },
+
+  data() {
+    return {
+      maxWidth: "auto",
+      gridWidth: "auto",
+      currentAnswers: [],
+      activeDroppable: null,
+      activeDraggable: null,
+      dropInsideDroppable: false,
+    };
+  },
+
+  mounted() {
+    if (this.show === "QUESTION") {
+      this.currentAnswers = this.question.answers.map((ac) => ({
+        answerCode: ac.answerCode,
+        answer: "",
+      }));
+
+      const mainDiv = document.querySelector("#" + this.id);
+      const draggableDataNames = [
+        ...new Set(this.question.answerOptions.map((ao) => ao.answerCode)),
+      ];
+
+      console.log(draggableDataNames);
+
+      const droppableDataNames = [
+        ...new Set(this.question.answers.map((a) => a.answerCode)),
+      ];
+
+      console.log(droppableDataNames);
+      draggableDataNames.forEach((ddn) => {
+        let elem = mainDiv.querySelector("[data-name='" + ddn + "']");
+        elem.classList.add("draggable");
+        if (this.question.clickToDrop) {
+          elem.addEventListener("click", () => this.addToActiveDroppable(elem));
+        }
+        elem.addEventListener("dragstart", () => this.onDragStart(elem));
+        elem.addEventListener("dragend", () => this.onDragEnd(elem));
+        elem.addEventListener("touchstart", () => this.onTouchStart(elem));
+        elem.addEventListener("touchend", () => this.onTouchEnd(elem));
+        elem.addEventListener("touchmove", function (event) {
+          // Prevent scrolling the page during drag
+          event.preventDefault();
+
+          if (this.activeDraggable) {
+            const touch = event.touches[0];
+            elem.style.position = "absolute";
+            elem.style.left = touch.clientX + "px";
+            elem.style.top = touch.clientY + "px";
+          }
+        });
+      });
+
+      droppableDataNames.forEach((ddn) => {
+        let elem = mainDiv.querySelector("[data-name='" + ddn + "']");
+        elem.classList.add("droppable");
+
+        elem.addEventListener("dragover", (event) => {
+          event.preventDefault();
+        });
+
+        // Handle the drop event
+        elem.addEventListener("drop", (event) => {
+          event.preventDefault();
+          this.onDrop(elem);
+        });
+
+        elem.addEventListener("dragstart", () => this.onDragStart(elem));
+        elem.addEventListener("dragend", () => this.onDragEnd(elem));
+        elem.addEventListener("touchstart", () => this.onTouchStart(elem));
+        elem.addEventListener("touchend", () => this.onTouchEnd(elem));
+      });
+    } else if (this.show === "CORRECT_ANSWERS") {
+      const answers = this.question.answers.map((ac) => ({
+        answerCode: ac.answerCode,
+        answer: ac.allowedAnswers.length > 0 ? ac.allowedAnswers[0] : "",
+      }));
+      this.fillAnswers(answers);
+    } else if (this.show === "STUDENT_ANSWERS") {
+      this.fillAnswers(this.question.studentAnswers);
+    } else if (this.show === "SUPPLIED_ANSWERS") {
+      this.fillAnswers(this.answers);
+    }
+    this.setEqualWidth();
+  },
+
+  computed: {
+    styleTag() {
+      // Wrap the dynamic CSS inside a <style> tag
+      return `<style>${this.question.exerciseStyles}</style>`;
+    },
+  },
+
+  methods: {
+    setAnswer(answerCode, answer) {
+      //alert (answerCode);
+      //alert (answer);
+
+      if (
+        !this.question.allowRandomDrops &&
+        answerCode != this.activeDroppable.getAttribute("data-name")
+      )
+        return;
+      const answerEntry = this.currentAnswers.find(
+        (a) => a.answerCode == answerCode
+      );
+      if (answerEntry) {
+        answerEntry.answer = answer;
+      }
+    },
+
+    clearAnswer(answerCode) {
+      if (this.lastFilledAnswerEntry) {
+        if (
+          !this.question.allowRandomDrops &&
+          answerCode != this.lastFilledAnswerEntry().answerCode
+        )
+          return;
+      }
+      const answerEntry = this.currentAnswers.find(
+        (a) => a.answerCode == answerCode
+      );
+      if (answerEntry) {
+        answerEntry.answer = "";
+      }
+    },
+
+    firstEmptyAnswerEntry() {
+      return this.currentAnswers.find((a) => a.answer == "");
+    },
+
+    firstEmptyDroppable() {
+      const answerEntry = this.firstEmptyAnswerEntry();
+      if (answerEntry) {
+        const activeDroppableDN = answerEntry.answerCode;
+        const mainDiv = document.querySelector("#" + this.id);
+
+        return mainDiv.querySelector("[data-name='" + activeDroppableDN + "']");
+      } else {
+        return null;
+      }
+    },
+
+    lastFilledAnswerEntry() {
+      const lastFilledIndex = this.currentAnswers
+        .slice()
+        .reverse()
+        .findIndex((a) => a.answer !== "");
+      if (lastFilledIndex !== -1) {
+        const reverseIndex = this.currentAnswers.length - 1 - lastFilledIndex;
+        return this.currentAnswers[reverseIndex];
+      } else {
+        return null;
+      }
+    },
+
+    checkAnswers() {
+      let allCorrect = true;
+      this.question.answers.forEach((ac) => {
+        const allowedAnswers = ac.allowedAnswers;
+        const studentAnswer = this.currentAnswers.find(
+          (ca) => ca.answerCode === ac.answerCode
+        ).answer;
+
+        if (
+          (allowedAnswers.length > 0 &&
+            !allowedAnswers.includes(studentAnswer)) ||
+          (allowedAnswers.length === 0 && studentAnswer !== "")
+        ) {
+          allCorrect = false;
+        }
+      });
+      return { allCorrect, studentAnswers: this.currentAnswers };
+    },
+
+    fillAnswers(answers) {
+      answers.forEach((ac) => {
+        const mainDiv = document.querySelector("#" + this.id);
+        const input = mainDiv.querySelector(`[data-name='${ac.answerCode}']`);
+        if (ac.answer) {
+          const content = this.question.answerOptions.find(
+            (ao) => ao.answerCode === ac.answer
+          ).optionContent;
+          input.innerHTML = content;
+        } else {
+          input.innerHTML = "";
+        }
+      });
+    },
+
+    setEqualWidth() {
+      const mainDiv = document.querySelector("#" + this.id);
+      const options = mainDiv.querySelectorAll(".answer-option");
+      let maxWidth = 0;
+      let gridGap = 0;
+      let optionBorderWidth = 0;
+
+      const optionGrids = mainDiv.querySelectorAll(".option-grid");
+      optionGrids.forEach((grid) => {
+        const gridStyles = window.getComputedStyle(grid);
+        gridGap = parseFloat(gridStyles.getPropertyValue("gap"));
+        grid.style.display = "block";
+      });
+
+      options.forEach((option) => {
+        const optionStyles = window.getComputedStyle(option);
+        optionBorderWidth = parseFloat(
+          optionStyles.getPropertyValue("border-width")
+        );
+        option.style.width = "auto";
+        option.style.display = "inline-block";
+        const optionWidth = option.offsetWidth;
+        if (optionWidth > maxWidth) {
+          maxWidth = optionWidth;
+        }
+      });
+      optionGrids.forEach((grid) => {
+        grid.style.display = "grid";
+      });
+
+      this.maxWidth = `${maxWidth}px`;
+      this.gridWidth = `${
+        (maxWidth + gridGap + optionBorderWidth * 2) *
+          this.question.optionsGridCols +
+        gridGap * 2
+      }px`;
+    },
+
+    addToActiveDroppable(draggable) {
+      if (!this.activeDroppable) return;
+      this.setAnswer(
+        this.activeDroppable.getAttribute("data-name"),
+        draggable.getAttribute("data-name")
+      );
+    },
+
+    onDragStart(elem) {
+      console.log("drag start");
+      console.log(elem.getAttribute("data-name"));
+      this.dropInsideDroppable = false;
+      this.activeDraggable = elem;
+    },
+
+    onTouchStart(elem) {
+      console.log("touch start");
+      console.log(elem.getAttribute("data-name"));
+      this.dropInsideDroppable = false;
+      this.activeDraggable = elem;
+    },
+
+    onDrop(elem) {
+      console.log("drop");
+      if (!(elem && this.activeDraggable)) return;
+      this.dropInsideDroppable = true;
+      if (elem.classList.contains("droppable")) {
+        if (this.activeDraggable.classList.contains("draggable")) {
+          this.setAnswer(
+            elem.getAttribute("data-name"),
+            this.activeDraggable.getAttribute("data-name")
+          );
+        } else {
+          /*
+          this.setAnswer(
+            elem.getAttribute("data-name"),
+            this.currentAnswers.find(
+              (a) =>
+                a.answerCode == this.activeDraggable.getAttribute("data-name")
+            ).answer
+          );
+          this.clearAnswer(this.activeDraggable.getAttribute("data-name"));
+          */
+        }
+      }
+    },
+
+    onTouchEnd(event) {
+      console.log("drop");
+      if (!this.activeDraggable) return;
+      const touch = event.changedTouches[0];
+      console.log(touch);
+      elem = this.isDropInsideDroppable(touch.clientX, touch.clientY);
+      if (elem && elem.classList.contains("droppable")) {
+        this.dropInsideDroppable = true;
+        if (this.activeDraggable.classList.contains("draggable")) {
+          this.setAnswer(
+            elem.getAttribute("data-name"),
+            this.activeDraggable.getAttribute("data-name")
+          );
+        } else {
+          /*
+          this.setAnswer(
+            elem.getAttribute("data-name"),
+            this.currentAnswers.find(
+              (a) =>
+                a.answerCode == this.activeDraggable.getAttribute("data-name")
+            ).answer
+          );
+          this.clearAnswer(this.activeDraggable.getAttribute("data-name"));
+          */
+        }
+      }
+    },
+
+    isDropInsideDroppable(dropX, dropY) {
+      const droppableDataNames = [
+        ...new Set(this.question.answers.map((a) => a.answerCode)),
+      ];
+      droppableDataNames.forEach((ddn) => {
+        let elem = mainDiv.querySelector("[data-name='" + ddn + "']");
+        const dropzoneRect = dropzone.getBoundingClientRect();
+        if (
+          clientX > dropzoneRect.left &&
+          clientX < dropzoneRect.right &&
+          clientY > dropzoneRect.top &&
+          clientY < dropzoneRect.bottom
+        ) {
+          console.log("Dropped inside the dropzone");
+          return elem;
+        } else {
+          return null;
+          console.log("Dropped outside");
+        }
+      });
+    },
+
+    allowDrop(event) {
+      event.preventDefault(); // Enable dropping
+    },
+
+    onDragEnd() {
+      console.log("drag end");
+      if (!this.dropInsideDroppable) {
+        this.clearAnswer(this.activeDraggable.getAttribute("data-name"));
+      }
+      this.activeDraggable = null;
+    },
+
+    addRemoveBtn(elem) {
+      // Check if a remove button already exists to avoid duplicating it
+      if (!elem.querySelector(".remove-btn")) {
+        // Create the remove button element
+        const removeBtn = document.createElement("button");
+        removeBtn.classList.add("remove-btn");
+
+        // Append the button to the element
+        elem.style.position = "relative"; // Ensure elem has relative position so the button can be positioned inside it
+        elem.appendChild(removeBtn);
+
+        // Add click event to remove the content from the droppable element
+        removeBtn.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent the default behavior (e.g., form submission)
+          event.stopPropagation(); // Prevent any other click events from triggering
+          this.removeFromDroppable(elem);
+        });
+      }
+    },
+
+    removeLastIn() {
+      const lastFilledIndex = this.currentAnswers
+        .slice()
+        .reverse()
+        .findIndex((a) => a.answer !== "");
+      if (lastFilledIndex !== -1) {
+        const reverseIndex = this.currentAnswers.length - 1 - lastFilledIndex;
+        this.currentAnswers[reverseIndex].answer = "";
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+/* Add some optional drag styles */
+.interactive-grid-slot.dragging {
+  border: 2px dashed #4394cc;
+}
+.interactive-grid-slot.dropzone {
+  border: 2px solid #b7e7fb;
+  min-height: 90px;
+}
+.draggable {
+  opacity: 1 !important; /* Ensures the element remains fully opaque */
+}
+
+.draggable:active,
+.draggable:focus {
+  opacity: 1 !important; /* Optional: keep opacity intact when clicked or focused */
+}
+
+.draggable:drag {
+  opacity: 1 !important; /* Override opacity reduction during drag */
+}
+</style>
+
+getStudentAnswers() {
+  let studentAnswers = [];
+  let mainDiv = document.querySelector("#" + this.id);
+
+  for (
+    let setIndex = 0;
+    setIndex < this.requiredNumberOfAnswerSets;
+    setIndex++
+  ) {
+    let answerSetDiv = mainDiv.querySelector(`#${this.id}-answer-set-${setIndex}`);
+    let setAnswers = [];
+
+    this.question.answerOptions.forEach((option) => {
+      let element = answerSetDiv.querySelector(
+        `[data-name='${option.answerCode}']`
+      );
+      setAnswers.push({
+        answerCode: option.answerCode,
+        answer: element.classList.contains("selected"),
+      });
+    });
+
+    // Check for distinct sets
+    if (! this.contains (studentAnswers, setAnswers)) {
+      studentAnswers.push(setAnswers);
+    }
+  }
+  console.log (studentAnswers);
+  return studentAnswers;
+},
+toggleSelection(evt) {
+  let option = evt.target;
+  while (!option.classList.contains("answer-option")) {
+    option = option.parentNode;
+  }
+  if (!option) return;
+  if (this.question.questionType == "MULTIPLE_SELECT") {
+    option.classList.toggle("selected");
+  } else if (this.question.questionType == "MULTIPLE_CHOICE") {
+    let mainDiv = document.querySelector("#" + this.id);
+    let options = mainDiv.querySelectorAll(".answer-option");
+    options.forEach((o) => {
+      o.classList.remove("selected");
+    });
+    option.classList.add("selected");
+  }
+},
+<div v-if="question.displayExplanationConclusion" class="mt-8">
+  <div v-if="correctOptionNos.length == 1">
+    Therefore, option {{ correctOptionNos }} is the correct option
+  </div>
+  <div v-else>
+    Therefore, options {{ correctOptionNos }} are the correct options
+  </div>
+</div>
+
+
+correctOptionNos() {
+  let correctOptionNos = this.question.answers[0]
+    .map((answer, index) => {
+      if (answer.isCorrect) return index + 1;
+      return null;
+    })
+    .filter((index) => index !== null);
+  return correctOptionNos;
+},
+
+

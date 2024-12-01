@@ -1,0 +1,66 @@
+::v-deep table {
+    border: 0px;
+}    
+  ::v-deep td {
+    border: 0px;
+  }
+  
+  ::v-deep table.embed-tbl-grid td {
+    border: 3px solid #b7e7fb;
+  }
+  ::v-deep td {
+    padding: 10px;
+  }
+  ::v-deep .bold-text {
+    font-weight: bold;
+  }
+  ::v-deep table.embed-tbl-grid {
+    border: 3px solid #b7e7fb;
+  }
+  ::v-deep table {
+    width: auto;
+  }
+  
+  .solution-card {
+    pointer-events: none;
+  }
+  
+  ::v-deep .highlight {
+    display: inline-block;
+    padding: 10px;
+    background-color: #c6deef;
+    border: 1px solid #4394cc;
+    border-radius: 2px;
+    margin: 10px;
+  }
+  
+  .draggable-option {
+    border: 3px solid #e3e3e3;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: crosshair;
+    margin-right: 10px;
+  }
+  
+  ::v-deep .empty-card-slot {
+    margin: 5px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    text-align: center;
+  }
+  ::v-deep .card-slot {
+    background-color: #eeeeee;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+

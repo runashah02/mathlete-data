@@ -1,0 +1,93 @@
+{
+    "questionId": 1,
+    "questionType": "MULTIPLE_CHOICE",
+    "moduleId": 2,
+    "slabs": [{ "min": 1, "max": 9, "count": 10, "rangeDesc": "1-9" }],
+    "numberRangeMin": 1,
+    "numberRangeMax": 9,
+    "variation": 2,
+    "exerciseCustomStyles": "",
+    "questionCustomStyles": "",
+    "focusFirstInput": 1,
+    "parts": [
+      {
+        "autoContent": 0,
+        "content": "<p><span class='audio-enabled'>Anna has more books than Mia, but fewer than Lucy. Who has the most books?</span></p>",
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "displayRepeatCount": 0,
+        "answerKeys": []
+      },
+      {
+        "autoContent": 1,
+        "content": "",
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "displayRepeatCount": 0,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "content": "Anna",
+            "allowedAnswers": [[[0]]]
+          },
+          {
+            "answerCodes": ["vnbh"],
+            "content": "Lucy",
+            "allowedAnswers": [[[1]]]
+          },
+          {
+            "answerCodes": ["vnbh"],
+            "content": "Mia",
+            "allowedAnswers": [[[0]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "STATIC",
+    "answerExplanation": ""
+  },
+  {
+    "questionId": 3,
+    "questionType": "FILL_IN_THE_BLANKS",
+    "exerciseCustomStyles": "",
+    "questionCustomStyles": "",
+    "moduleId": 2,
+    "slabs": [{ "min": 1, "max": 10, "count": 10, "rangeDesc": "1-9" }],
+    "numberRangeMin": 1,
+    "numberRangeMax": 10,
+    "variation": 3,
+    "focusFirstInput": true,
+    "parts": [
+      {
+        "autoContent": false,
+        "content": "<p><span class='audio-enabled'>I am a mystery number. I am more than 7. I am less than 10. I am not 9. Who am I?</span></p>",
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "displayRepeatCount": 0,
+        "answerKeys": []
+      },
+      {
+        "autoContent": true,
+        "content": "",
+        "repeatable": false,
+        "requiredRepeats": 1,
+        "maxPossibleRepeats": 1,
+        "answerKeys": [
+          {
+            "answerCodes": ["vnbh"],
+            "inputType": "INPUT",
+            "inputWidth": "auto",
+            "inputHeight": "auto",
+            "inputCSSClass": "",
+            "caseSensitive": 0,
+            "ignoreSpaces": 0,
+            "ignoreHyphens": 0,
+            "allowedAnswers": [[[8]]]
+          }
+        ]
+      }
+    ],
+    "explanation": "NONE",
+    "answerExplanation": ""
+  }
+]

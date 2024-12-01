@@ -1,0 +1,328 @@
+[
+  [
+    {
+      "iconName": "alarm-clock-00.svg",
+      "singular": "alarm clock",
+      "plural": "alarm clocks"
+    },
+    {
+      "iconName": "alarm-clock-01.svg",
+      "singular": "alarm clock",
+      "plural": "alarm clocks"
+    }
+  ],
+
+  [
+    {
+      "iconName": "apple-00.svg",
+      "singular": "apple",
+      "plural": "apples"
+    },
+    {
+      "iconName": "pear-00.svg",
+      "singular": "pear",
+      "plural": "pears"
+    }
+  ],
+  [
+    {
+      "iconName": "ball-01.svg",
+      "singular": "ball",
+      "plural": "balls"
+    },
+
+    {
+      "iconName": "ball-10.svg",
+      "singular": "ball",
+      "plural": "balls"
+    }
+  ],
+  [
+    {
+      "iconName": "ball-04.svg",
+      "singular": "ball",
+      "plural": "balls"
+    },
+    {
+      "iconName": "ball-09.svg",
+      "singular": "ball",
+      "plural": "balls"
+    }
+  ],
+  [
+    {
+      "iconName": "ball-06.svg",
+      "singular": "ball",
+      "plural": "balls"
+    },
+    {
+      "iconName": "ball-07.svg",
+      "singular": "ball",
+      "plural": "balls"
+    }
+  ],
+  [
+    {
+      "iconName": "ball-02.svg",
+      "singular": "ball",
+      "plural": "balls"
+    },
+    {
+      "iconName": "ball-08.svg",
+      "singular": "ball",
+      "plural": "balls"
+    }
+  ],
+  [
+    {
+      "iconName": "teddy-bear-00.svg",
+      "singular": "teddy bear",
+      "plural": "teddy bears"
+    },
+    {
+      "iconName": "teddy-bear-01.svg",
+      "singular": "teddy bear",
+      "plural": "teddy bears"
+    }
+  ],
+  [
+    {
+      "iconName": "ball-01.svg",
+      "singular": "ball",
+      "plural": "balls"
+    },
+    {
+      "iconName": "ball-10.svg",
+      "singular": "ball",
+      "plural": "balls"
+    }
+  ],
+  [
+    {
+      "iconName": "bee-00.svg",
+      "singular": "bee",
+      "plural": "bees"
+    },
+    {
+      "iconName": "bee-01.svg",
+      "singular": "bee",
+      "plural": "bees"
+    }
+  ],
+  [
+    {
+      "iconName": "beetle-00.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    },
+    {
+      "iconName": "beetle-01.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    }
+  ],
+  [
+    {
+      "iconName": "beetle-02.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    },
+    {
+      "iconName": "beetle-03.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    }
+  ],
+  [
+    {
+      "iconName": "beetle-04.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    },
+    {
+      "iconName": "bug-00.svg",
+      "singular": "beetle",
+      "plural": "beetles"
+    }
+  ],
+  [
+    {
+      "iconName": "boat-01.svg",
+      "singular": "boat",
+      "plural": "boats"
+    },
+    {
+      "iconName": "boat-02.svg",
+      "singular": "boat",
+      "plural": "boats"
+    }
+  ],
+  [
+    {
+      "iconName": "butterfly-01.svg",
+      "singular": "butterfly",
+      "plural": "butterflies"
+    },
+    {
+      "iconName": "butterfly-03.svg",
+      "singular": "butterfly",
+      "plural": "butterflies"
+    }
+  ],
+  [
+    {
+      "iconName": "butterfly-02.svg",
+      "singular": "butterfly",
+      "plural": "butterflies"
+    },
+    {
+      "iconName": "butterfly-05.svg",
+      "singular": "butterfly",
+      "plural": "butterflies"
+    }
+  ],
+  [
+    {
+      "iconName": "cake-00.svg",
+      "singular": "cake",
+      "plural": "cakes"
+    },
+    {
+      "iconName": "cake-02.svg",
+      "singular": "cake",
+      "plural": "cakes"
+    }
+  ],
+  [
+    {
+      "iconName": "candy-00.svg",
+      "singular": "candy",
+      "plural": "candies"
+    },
+    {
+      "iconName": "candy-03.svg",
+      "singular": "candy",
+      "plural": "candies"
+    }
+  ],
+  [
+    {
+      "iconName": "cat-00.svg",
+      "singular": "cat",
+      "plural": "cats"
+    },
+    {
+      "iconName": "cat-01.svg",
+      "singular": "cat",
+      "plural": "cats"
+    }
+  ],
+  [
+    {
+      "iconName": "caterpillar-00.svg",
+      "singular": "caterpillar",
+      "plural": "caterpillars"
+    },
+    {
+      "iconName": "chameleon-00.svg",
+      "singular": "chameleon",
+      "plural": "chameleons"
+    }
+  ],
+  [
+    {
+      "iconName": "cupcake-00.svg",
+      "singular": "cupcake",
+      "plural": "cupcakes"
+    },
+    {
+      "iconName": "cupcake-03.svg",
+      "singular": "cupcake",
+      "plural": "cupcakes"
+    }
+  ],
+  [
+    {
+      "iconName": "donut-00.svg",
+      "singular": "donut",
+      "plural": "donuts"
+    },
+    {
+      "iconName": "donut-01.svg",
+      "singular": "donut",
+      "plural": "donuts"
+    }
+  ],
+  [
+    {
+      "iconName": "dragonfly-00.svg",
+      "singular": "dragon fly",
+      "plural": "dragon flies"
+    },
+    {
+      "iconName": "fly-00.svg",
+      "singular": "fly",
+      "plural": "flies"
+    }
+  ],
+  [
+    {
+      "iconName": "dump-truck-00.svg",
+      "singular": "dump truck",
+      "plural": "dump trucks"
+    },
+    {
+      "iconName": "digger-00.svg",
+      "singular": "digger",
+      "plural": "diggers"
+    }
+  ],
+  [
+    {
+      "iconName": "elephant-00.svg",
+      "singular": "elephant",
+      "plural": "elephants"
+    },
+    {
+      "iconName": "giraffe-01.svg",
+      "singular": "giraffe",
+      "plural": "giraffes"
+    }
+  ],
+  [
+    {
+      "iconName": "firefly-00.svg",
+      "singular": "firefly",
+      "plural": "fireflies"
+    },
+    {
+      "iconName": "grasshopper-00.svg",
+      "singular": "grasshopper",
+      "plural": "grasshoppers"
+    }
+  ],
+  [
+    {
+      "iconName": "castle-00.svg",
+      "singular": "castle",
+      "plural": "castles"
+    },
+    {
+      "iconName": "house-00.svg",
+      "singular": "house",
+      "plural": "houses"
+    }
+  ],
+  [
+    {
+      "iconName": "hummingbird-00.svg",
+      "singular": "hummingbird",
+      "plural": "hummingbirds"
+    },
+    {
+      "iconName": "flamingo-00.svg",
+      "singular": "flamingo",
+      "plural": "flamingoes"
+    }
+  ]
+]

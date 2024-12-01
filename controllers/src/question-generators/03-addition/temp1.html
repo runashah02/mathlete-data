@@ -1,0 +1,47 @@
+<style>
+    .highlighted-digit {
+      color: #7a0bd1;
+    }
+    
+    .result {
+          border-top: 1px solid black !important;
+          border-bottom: 1px solid black !important;
+        }
+
+    .op-grid {
+          width: fit-content;
+          border:1px solid #b7e7fb;
+          gap: 0px;
+          display: grid;
+          grid-template-columns: repeat(6, min-content);
+        }
+  
+        .op-grid > div {
+          border: 1px solid #b7e7fb;
+          border-collapse: collapse;
+          height: 4ch;
+          width: 4ch;
+          line-height: 4ch;
+          vertical-align: middle;
+          text-align: center;
+        }
+  
+  
+        .carry-forward {
+          color: darkgray;
+          font-style: italic;
+        }
+  
+        body {
+          font-family: "Lato", sans-serif;
+          font-size: 12pt !important;
+          margin: 0;
+          padding: 20px;
+        }
+  
+        .place-name {
+          background-color: #b7e7fb;
+        }
+  
+      </style>
+  <div style="margin-bottom: 30px">Place the addends in columns as shown</div><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward"></div><div></div><div>5</div><div>4</div><div>7</div><div>7</div><div>9</div><div>+</div><div> </div><div>6</div><div>8</div><div>1</div><div>4</div><div class="result"></div><div class="result"> </div><div class="result"> </div><div class="result"> </div><div class="result"> </div><div class="result"> </div></div><p style="margin-top: 30px">Add the ones digits. 9 + 4 = 13</p><p>Write 3 in the ones place. Carry forward 1 to the tens place</p><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward">1</div><div class="carry-forward highlighted-digit"></div><div></div><div>5</div><div>4</div><div>7</div><div>7</div><div class="highlighted-digit">9</div><div>+</div><div> </div><div>6</div><div>8</div><div>1</div><div class="highlighted-digit">4</div><div class="result"></div><div class="result"> </div><div class="result"> </div><div class="result"> </div><div class="result"> </div><div class="highlighted-digit result">3</div></div><p style="margin-top: 30px">Add the tens digits. 1 + 7 + 1 = 9</p><p>Write 9 in the tens place. </p><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward"></div><div class="carry-forward highlighted-digit">1</div><div class="carry-forward"></div><div></div><div>5</div><div>4</div><div>7</div><div class="highlighted-digit">7</div><div>9</div><div>+</div><div> </div><div>6</div><div>8</div><div class="highlighted-digit">1</div><div>4</div><div class="result"></div><div class="result"> </div><div class="result"> </div><div class="result"> </div><div class="highlighted-digit result">9</div><div class="result">3</div></div><p style="margin-top: 30px">Add the hundreds digits. 7 + 8 = 15</p><p>Write 5 in the hundreds place. Carry forward 1 to the thousands place</p><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward"></div><div class="carry-forward">1</div><div class="carry-forward highlighted-digit"></div><div class="carry-forward">1</div><div class="carry-forward"></div><div></div><div>5</div><div>4</div><div class="highlighted-digit">7</div><div>7</div><div>9</div><div>+</div><div> </div><div>6</div><div class="highlighted-digit">8</div><div>1</div><div>4</div><div class="result"></div><div class="result"> </div><div class="result"> </div><div class="highlighted-digit result">5</div><div class="result">9</div><div class="result">3</div></div><p style="margin-top: 30px">Add the thousands digits. 1 + 4 + 6 = 11</p><p>Write 1 in the thousands place. Carry forward 1 to the ten thousands place</p><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward">1</div><div class="carry-forward highlighted-digit">1</div><div class="carry-forward"></div><div class="carry-forward">1</div><div class="carry-forward"></div><div></div><div>5</div><div class="highlighted-digit">4</div><div>7</div><div>7</div><div>9</div><div>+</div><div> </div><div class="highlighted-digit">6</div><div>8</div><div>1</div><div>4</div><div class="result"></div><div class="result"> </div><div class="highlighted-digit result">1</div><div class="result">5</div><div class="result">9</div><div class="result">3</div></div><p style="margin-top: 30px">Add the ten thousands digits. 1 + 5 = 6</p><p>Write 6 in the ten thousands place. </p><div class="op-grid"><div class="place-name"></div><div class="place-name">TTh</div><div class="place-name">Th</div><div class="place-name">H</div><div class="place-name">T</div><div class="place-name">O</div><div></div><div class="carry-forward highlighted-digit">1</div><div class="carry-forward">1</div><div class="carry-forward"></div><div class="carry-forward">1</div><div class="carry-forward"></div><div></div><div class="highlighted-digit">5</div><div>4</div><div>7</div><div>7</div><div>9</div><div>+</div><div class="highlighted-digit"> </div><div>6</div><div>8</div><div>1</div><div>4</div><div class="result"></div><div class="highlighted-digit result">6</div><div class="result">1</div><div class="result">5</div><div class="result">9</div><div class="result">3</div></div><p>54779 + 6814 = 61593</p>

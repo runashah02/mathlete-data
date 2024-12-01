@@ -1,0 +1,943 @@
+[
+    {
+        "questionId": 0,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": 1,
+        "adjustOptionsWidth": 1,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>Click the pot with 0 flowers:</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "answerGridCSS": "default-grid",
+                "answerInputCSS": "default-option", 
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 4,
+                "answerKeys": [
+                    {
+                        "answerCodes": [
+                            "chya"
+                        ],
+                        "content": "<img src='/assets/zero/002-flower pot.svg' width='120' />",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": ["The pot has 2 flowers"]
+                    },
+                    {
+                        "answerCodes": [
+                            "rita"
+                        ],
+                        "content": "<img src='/assets/zero/003-flower pot.svg' width='120' />",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": ["The pot has 1 flower"]
+                    },
+                    {
+                        "answerCodes": [
+                            "ytsh"
+                        ],
+                        "content": "<img src='/assets/zero/019-plant pot.svg' width='120' />",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": ["There are no flowers in this pot. The pot has 0 flowers"]
+                    },
+                    {
+                        "answerCodes": [
+                            "ravi"
+                        ],
+                        "content": "<img src='/assets/zero/028-bird.svg' width='120' />",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": ["The pot has 1 flower"]
+                    }
+                ]
+            }
+        ],
+        "explanation": "STATIC",
+        "answerExplanation": ""
+    },
+    {
+        "questionId": 1,
+        "questionType": "MULTIPLE_SELECT",
+        "exerciseCustomCSS": ".clickable {cursor: pointer; transition: 'background-color 0.3s, border-color 0.3s';background-color: #ffffff;text-align: center;} .clickable:hover {background-color: #b7e7fb;} .clickable.selected {background-color: #b7e7fb;} tbl {border-collapse:collapse} .black-border-option {border: 1px solid #b7e7fb;padding: 10px 20px;cursor: pointer;transition: 'background-color 0.3s, border-color 0.3s';background-color: #ffffff;text-align: center;margin-left:-2px;margin-bottom:-2px} .black-border-option:hover {background-color: #b7e7fb;} .selected {background-color: #b7e7fb;} .start-option {border: 2px solid transparent;padding:0px !important;margin:0px !important }",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": false,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>Start the maze with 0. You have to finish the maze with a total of 25.<br/>At each turn you can go right or down. There are 3 such routes. Can you find them?</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": false,
+                "content": "<table class='tbl tbl-blue-grid' ><tr><td class='answer-option' style='background-color:#b7e7fb'>Start</td><td class='answer-option clickable' answer-code='2222'>4</td><td class='answer-option clickable' answer-code='3333'>3</td><td class='answer-option clickable' answer-code='4444'>7</td><td class='answer-option clickable' answer-code='5555'>5</td></tr><tr><td class='answer-option clickable' answer-code='6666'>2</td><td class='answer-option clickable' answer-code='7777'>9</td><td class='answer-option clickable' answer-code='8888'>8</td><td class='answer-option clickable' answer-code='9999'>1</td><td class='answer-option clickable' answer-code='0000'>3</td></tr><tr><td class='answer-option clickable' answer-code='1110'>3</td><td class='answer-option clickable' answer-code='2220'>5</td><td class='answer-option clickable' answer-code='3330'>7</td><td class='answer-option clickable' answer-code='4440'>6</td><td class='answer-option clickable' answer-code='5550'>4</td></tr><tr><td class='answer-option clickable' answer-code='6660'>8</td><td class='answer-option clickable' answer-code='7770'>1</td><td class='answer-option clickable' answer-code='8880'>0</td><td class='answer-option clickable' answer-code='9990'>2</td><td class='answer-option' style='background-color:#b7e7fb'>Finish</td></tr></table>",
+                "repeatable": true,
+                "requiredRepeats": 3,
+                "maxPossibleRepeats": 3,
+                "answerKeys": [
+                    {
+                        "answerCodes": [
+                            "2222",
+                            "3333",
+                            "4444",
+                            "5555",
+                            "6666",
+                            "7777",
+                            "8888",
+                            "9999",
+                            "0000",
+                            "1110",
+                            "2220",
+                            "3330",
+                            "4440",
+                            "5550",
+                            "6660",
+                            "7770",
+                            "8880",
+                            "9990"
+                        ],
+                        "matchInAnyOrder": false,
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ]
+                            ],
+                            [
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ]
+                            ],
+                            [
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    0
+                                ],
+                                [
+                                    1
+                                ],
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "explanation": "NONE",
+        "answerExplanation": ""
+    },
+    {
+        "questionId": 2,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": true,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>The following pictograph depicts the number of cars sold by an automobile showroom during a certain week</p><table class='tbl-blue-grid'><tr><td>Day</td><td>Number of cars sold</td></tr><tr><td>Monday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Tuesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Wednesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Thursday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Friday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Saturday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr></table><p>Look at the pictograph and answer the question given below:</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": false,
+                "content": "<p>The maximum number of cars were sold on</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 4,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["manu"],
+                        "content": "Saturday",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["mihr"],
+                        "content": "Monday",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["rayu"],
+                        "content": "Friday",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["dada"],
+                        "content": "Tuesday",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>Count the symbols for each day</p><table class='tbl-blue-grid'><tr><td>Day</td><td>Number of cars sold</td><td>Total Symbols</td></tr><tr><td>Monday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>5</td></tr><tr><td>Tuesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>4</td></tr><tr><td>Wednesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>2</td></tr><tr><td>Thursday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>1</td></tr><tr><td>Friday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>7</td></tr><tr><td>Saturday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td><td>3</td></tr></table>"
+    },
+    {
+        "questionId": 3,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": false,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>The following pictograph depicts the number of cars sold by an automobile showroom during a certain week</p><table class='tbl-blue-grid'><tr><td>Day</td><td>Number of cars sold</td></tr><tr><td>Monday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Tuesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Wednesday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Thursday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Friday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr><tr><td>Saturday</td><td><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /><img src='/assets/count-objects/car-01.svg' class='counting-object-image-40' /></td></tr></table><p>Look at the pictograph and answer the question given below:</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": false,
+                "content": "<p>How many cars were sold on Monday?</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 4,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["pink"],
+                        "content": "1",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["jims"],
+                        "content": "5",
+                        "allowedAnswers": [
+                            [
+                                [1]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["dhir"],
+                        "content": "4",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["vibh"],
+                        "content": "2",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>Count the symbols for Monday</p><p><span class=\"bold-text\">5</span> Cars were sold on Monday</p>"
+    },
+    {
+        "questionId": 4,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": true,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>State whether True or False</p><p>The smallest 2-digit number formed using <span class='highlight'>2</span> and <span class='highlight'>7</span> is 27</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 2,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["chtn"],
+                        "content": "True",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["meet"],
+                        "content": "False",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>2 Numbers can be formed with <span class=\"highlight\">2</span>and <span class=\"highlight\">7</span>:</p><p>27 and 72</p><p>The smallest 2-digit number formed using <span class='highlight'>2</span> and <span class='highlight'>7</span> is 27</p>"
+    },
+    {
+        "questionId": 5,
+        "questionType": "MULTIPLE_SELECT",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": true,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>Select which of these following statements are true</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 1,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["abcd"],
+                        "content": "All sides of a scalene triangle have the same length",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["efgh"],
+                        "content": "All sides of an equilateral triangle have the same length",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["ijkl"],
+                        "content": "All angles of an equilateral triangle are equal",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["mnop"],
+                        "content": "Sum of all angles of a scalene triangle is 180",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>A triangle is called a scalene triangle when all it's sides are of different lengths</p><p>A triangle is called an equilateral triangle when all it's sides have the same length</p><p>All angles of an equilateral triangle are equal. Each angle is 60 degrees</p><p>Sum of all angles of a triangle is always 180 degrees irrespective of the type</p>"
+    },
+    {
+        "questionId": 6,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": false,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>How many dolphins are there?</p><div class='guide-counting image-grid'><div class='counting-object-container'><img class='counting-object-image' src='/assets/count-objects/dolphin-00.svg'/></div></div></div>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 5,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["OvMx"],
+                        "content": "1",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["w9RN"],
+                        "content": "2",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["QeTa"],
+                        "content": "3",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["fXYI"],
+                        "content": "4",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["2XcI"],
+                        "content": "5",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["!1HI"],
+                        "content": "6",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["55cD"],
+                        "content": "7",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["Jgzn"],
+                        "content": "8",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["$86r"],
+                        "content": "9",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["pONe"],
+                        "content": "10",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>How many dolphins are there?</p><div class='guide-counting image-grid'><div class='counting-object-container'><img class='counting-object-image image-overlay' src='/assets/count-objects/dolphin-00.svg'/><div class='counting-number'>1</div></div></div></div>"
+    },
+    {
+        "questionId": 6,
+        "questionType": "MULTIPLE_SELECT",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": true,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>Which shows 5 apples?</p>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+            },
+            {
+                "autoContent": true,
+                "content": "",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeysPerRow": 2,
+                "answerKeys": [
+                    {
+                        "answerCodes": ["q72Q"],
+                        "content": "<div style='position: relative; width: 200px; height: 200px;'><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 45.969735799225475px; top: 69.91399266546881px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 118.3613198512063px; top: 46.73550693881914px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 145.36169734553707px; top: 152.12395257436145px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 159.3551979305126px; top: 108.35441895215062px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 67.76751039771656px; top: 157.70555953618077px;' /></div>",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": "This option has 5 apples"
+                    },
+                    {
+                        "answerCodes": ["rLxm"],
+                        "content": "<div style='position: relative; width: 200px; height: 200px;'><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 133.05388783675352px; top: 40.672220841293836px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 132.11189598853807px; top: 147.3503762966339px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 26.273747881087672px; top: 51.04029777502458px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 32.31157404040811px; top: 97.34686937052115px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 21.004170769974166px; top: 8.463864287094829px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 18.872346079846913px; top: 142.4687805720528px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 157.32552875652502px; top: 93.99122954645442px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 86.48560152830765px; top: 121.1376623567471px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 91.10569903269746px; top: 15.630377953981451px;' /></div>",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": "This option has 9 apples"
+                    },
+                    {
+                        "answerCodes": ["O8m1"],
+                        "content": "<div style='position: relative; width: 200px; height: 200px;'><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 60.358362877531455px; top: 42.09846309258456px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 24.465923676144854px; top: 84.74836140125966px;' /></div>",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": "This option has 2 apples"
+                    },
+                    {
+                        "answerCodes": ["cBsj"],
+                        "content": "<div style='position: relative; width: 200px; height: 200px;'><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 124.55483711471373px; top: 149.50349878556858px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 28.063507423447973px; top: 87.62694000322583px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 134.25190851817456px; top: 9.088713262748982px;' /><img src='/assets/count-objects/apple-00.svg' style='position: absolute; width: 40px; left: 66.75013918767831px; top: 148.06235377677112px;' /></div>",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ],
+                        "answerExplanation": "This option has 4 apples"
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": ""
+    },
+    {
+        "questionId": 8,
+        "questionType": "MULTIPLE_CHOICE",
+        "exerciseCustomCSS": "",
+        "questionCustomCSS": "",
+        "shuffleAnswerChoices": false,
+        "parts": [
+            {
+                "autoContent": false,
+                "content": "<p>How many more lemurs do you need to make 10?</p><table class='tbl-blue-grid'><tr><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td></tr><tr><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60'/></td><td style='width:80px;height:80px'></td><td style='width:80px;height:80px'></td></tr></table>",
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,
+                "answerKeys": []
+
+            },
+            {
+                "autoContent": true,
+                "answerKeysPerRow": 5,
+                "repeatable": false,
+                "requiredRepeats": 1,
+                "maxPossibleRepeats": 1,                
+                "answerKeys": [
+                    {
+                        "answerCodes": ["sbjW"],
+                        "content": "1",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["x!m6"],
+                        "content": "2",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    1
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["iCxZ"],
+                        "content": "3",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["p@Gy"],
+                        "content": "4",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["CtgO"],
+                        "content": "5",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["b2zy"],
+                        "content": "6",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["to2b"],
+                        "content": "7",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["^czk"],
+                        "content": "8",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["!sPT"],
+                        "content": "9",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    },
+                    {
+                        "answerCodes": ["StdY"],
+                        "content": "10",
+                        "allowedAnswers": [
+                            [
+                                [
+                                    0
+                                ]
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ],
+        "answerExplanation": "<p>How many <span class=\"bold-text\">more</span> lemurs do you need to make 10?</p><table class='tbl-grid-blue'><tr><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td></tr><tr><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' /></td><td><img class='image-overlay' src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' />\n      <div class='counting-number'>1</div></td><td><img class='image-overlay' src='/assets/count-objects/lemur-00.svg' class='counting-object-image-60' />\n      <div class='counting-number'>2</div></td></tr></table>"
+    }
+]

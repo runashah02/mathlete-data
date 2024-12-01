@@ -1,0 +1,9 @@
+[
+  {
+    "container": "pot",
+    "objectSingular": "flower",
+    "objectPlural": "flowers",
+    "pictures": ["2-flowers.svg", "1-flower.svg", "1-flowerbird.svg"],
+    "zeroPic": "0-flowers.svg"
+  }
+]

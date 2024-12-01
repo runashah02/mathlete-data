@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech with Female Voice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .audio-enabled {
+      margin-bottom: 10px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    button.speak-button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Text to Speech Example</h1>
+
+<p class="audio-enabled">Tara had 3 stars. Nia gave her 3 more stars. How many stars does Tara have now?</p>
+<p>Solution:</p>
+<p class="audio-enabled">Tara had 3 stars.</p>
+<p class="audio-enabled">Nia gave her 3 more stars.</p>
+
+<script>
+  // Function to speak the text inside the corresponding <p> element with a female voice
+  function speakText(text) {
+    // Create a new instance of SpeechSynthesisUtterance
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    // Get the list of available voices
+    const voices = window.speechSynthesis.getVoices();
+
+    // Find a female voice, preferring English voices
+    const femaleVoice = voices.find(voice => voice.name.includes('Female') || (voice.lang === 'en-US' && voice.gender === 'female')) || voices[0];
+
+    // Assign the selected female voice to the utterance
+    utterance.voice = femaleVoice;
+
+    // Set speech properties (optional)
+    utterance.pitch = 1; // Normal pitch
+    utterance.rate = 1; // Normal rate
+    utterance.volume = 1; // Full volume
+
+    // Speak the text
+    window.speechSynthesis.speak(utterance);
+  }
+
+  // Add a button to each .audio-enabled paragraph
+  document.querySelectorAll('.audio-enabled').forEach(function(paragraph) {
+    // Store the original text before adding the button
+    const originalText = paragraph.innerText;
+
+    // Create the "Speak" button
+    const button = document.createElement('button');
+    button.innerHTML = '🔊 Listen';
+    button.classList.add('speak-button');
+
+    // Add an event listener to the button to speak the text of the paragraph
+    button.addEventListener('click', function() {
+      speakText(originalText);
+    });
+
+    // Insert the button at the beginning of the paragraph
+    paragraph.prepend(button);
+  });
+
+  // Ensure voices are loaded properly before trying to speak
+  window.speechSynthesis.onvoiceschanged = function() {
+    document.querySelectorAll('.audio-enabled button').forEach(function(button) {
+      // Reassign event listeners with voices loaded
+      button.addEventListener('click', function() {
+        const text = this.parentElement.innerText.replace(this.innerText, '').trim();
+        speakText(text);
+      });
+    });
+  };
+</script>
+
+</body>
+</html>

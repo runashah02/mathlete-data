@@ -1,0 +1,70 @@
+[{
+  "questionId": 0,
+  "questionType": "CLICK_AND_ADD_ONE",
+  "exerciseCustomCSS": ".fitted-div {width:100%;height:100%;display:block;}",
+  "parts": [
+    {
+      "autoContent": false,
+      "repeatable": false,
+      "requiredRepeats": 1,
+      "maxPossibleRepeats": 1,
+      "content": "<p>Put 2 alarm clocks on the grid</p><table class='tbl-blue-grid tbl-blue-grid-5by2'><tr><td><div answer-code='1111' class='fitted-div'></div></td><td><div answer-code='2222' class='fitted-div'></div></td><td><div answer-code='3333' class='fitted-div'></div></td><td><div answer-code='4444' class='fitted-div'></div></td><td><div answer-code='5555' class='fitted-div'></div></td></tr><tr><td><div answer-code='6666' class='fitted-div'></div></td><td><div answer-code='7777' class='fitted-div'></div></td><td><div answer-code='8888' class='fitted-div'></div></td><td><div answer-code='9999' class='fitted-div'></div></td><td><div answer-code='0000' class='fitted-div'></div></td></tr></table>",
+      "answerKeys": [
+        {
+          "answerCodes": ["1111"],
+          "allowedAnswers": [[["aB#y"]]]
+        },
+        {
+          "answerCodes": ["2222"],
+          "allowedAnswers": [[["aB#y"]]]
+        },
+        {
+          "answerCodes": ["3333"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["4444"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["5555"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["6666"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["7777"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["8888"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["9999"],
+          "allowedAnswers": [[[""]]]
+        },
+        {
+          "answerCodes": ["0000"],
+          "allowedAnswers": [[[""]]]
+        }
+      ]
+    },
+    {
+      "autoContent": true,
+      "answerKeysPerRow": 2,
+      "repeatable": false,
+      "requiredRepeats": 1,
+      "maxPossibleRepeats": 1,
+      "answerKeys": [
+        {
+          "answerCodes": ["aB#y"],
+          "content": "<span class='insert-content'><img src='/assets/count-objects/alarm-clock-00.svg' class='counting-object-image-60' style='display:inline'/></span>"
+        }
+      ]
+    }
+  ],
+  "answerExplanation": ""
+}]

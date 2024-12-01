@@ -1,0 +1,210 @@
+[
+  {
+    "setSingular": "fruit",
+    "setPlural": "fruits",
+    "iconPair": [
+      {
+        "iconName": "apple-00.svg",
+        "singular": "apple",
+        "plural": "apples"
+      },
+      {
+        "iconName": "pear-00.svg",
+        "singular": "pear",
+        "plural": "pears"
+      }
+    ]
+  },
+  {
+    "setSingular": "toy",
+    "setPlural": "toys",
+    "iconPair": [
+      {
+        "iconName": "teddy-bear-01.svg",
+        "singular": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "iconName": "doll-00.svg",
+        "singular": "doll",
+        "plural": "dolls"
+      }
+    ]
+  },
+  {
+    "setSingular": "vehicle",
+    "setPlural": "vehicles",
+    "iconPair": [
+      {
+        "iconName": "bus-00.svg",
+        "singular": "bus",
+        "plural": "buses"
+      },
+      {
+        "iconName": "car-00.svg",
+        "singular": "car",
+        "plural": "cars"
+      }
+    ]
+  },
+  {
+    "setSingular": "snack",
+    "setPlural": "snacks",
+    "iconPair": [
+      {
+        "iconName": "biscuit-00.svg",
+        "singular": "biscuit",
+        "plural": "biscuits"
+      },
+      {
+        "iconName": "donut-00.svg",
+        "singular": "donut",
+        "plural": "donuts"
+      }
+    ]
+  },
+  {
+    "setSingular": "insect",
+    "setPlural": "insects",
+    "iconPair": [
+      {
+        "iconName": "beetle-00.svg",
+        "singular": "beetle",
+        "plural": "beetles"
+      },
+      {
+        "iconName": "butterfly-01.svg",
+        "singular": "butterfly",
+        "plural": "butterflies"
+      }
+    ]
+  },
+  {
+    "setSingular": "snack",
+    "setPlural": "snacks",
+    "iconPair": [
+      {
+        "iconName": "burger-00.svg",
+        "singular": "burger",
+        "plural": "burgers"
+      },
+      {
+        "iconName": "cake-00.svg",
+        "singular": "cake",
+        "plural": "cakes"
+      }
+    ]
+  },
+  {
+    "setSingular": "sweet treat",
+    "setPlural": "sweet treats",
+    "iconPair": [
+      {
+        "iconName": "candy-00.svg",
+        "singular": "candy",
+        "plural": "candies"
+      },
+      {
+        "iconName": "candy-jar-00.svg",
+        "singular": "candy jar",
+        "plural": "candy jars"
+      }
+    ]
+  },
+  {
+    "setSingular": "vegetable",
+    "setPlural": "vegetables",
+    "iconPair": [
+      {
+        "iconName": "carrot-00.svg",
+        "singular": "carrot",
+        "plural": "carrots"
+      },
+      {
+        "iconName": "radish-00.svg",
+        "singular": "radish",
+        "plural": "radishes"
+      }
+    ]
+  },
+  {
+    "setSingular": "tree",
+    "setPlural": "trees",
+    "iconPair": [
+      {
+        "iconName": "christmas-tree-00.svg",
+        "singular": "christmas tree",
+        "plural": "christmas trees"
+      },
+      {
+        "iconName": "coconut-tree-00.svg",
+        "singular": "coconut tree",
+        "plural": "coconut trees"
+      }
+    ]
+  },
+  {
+    "setSingular": "pet",
+    "setPlural": "pets",
+    "iconPair": [
+      {
+        "iconName": "cat-00.svg",
+        "singular": "cat",
+        "plural": "cats"
+      },
+      {
+        "iconName": "dog-00.svg",
+        "singular": "dog",
+        "plural": "dogs"
+      }
+    ]
+  },
+  {
+    "setSingular": "bird",
+    "setPlural": "birds",
+    "iconPair": [
+      {
+        "iconName": "hummingbird-00.svg",
+        "singular": "hummingbird",
+        "plural": "hummingbirds"
+      },
+      {
+        "iconName": "flamingo-00.svg",
+        "singular": "flamingo",
+        "plural": "flamingoes"
+      }
+    ]
+  },
+  {
+    "setSingular": "cute animal",
+    "setPlural": "cute animals",
+    "iconPair": [
+      {
+        "iconName": "caterpillar-00.svg",
+        "singular": "caterpillar",
+        "plural": "caterpillars"
+      },
+      {
+        "iconName": "chameleon-00.svg",
+        "singular": "chameleon",
+        "plural": "chameleons"
+      }
+    ]
+  },
+  {
+    "setSingular": "animal",
+    "setPlural": "animals",
+    "iconPair": [
+      {
+        "iconName": "elephant-00.svg",
+        "singular": "elephant",
+        "plural": "elephants"
+      },
+      {
+        "iconName": "giraffe-00.svg",
+        "singular": "giraffe",
+        "plural": "giraffes"
+      }
+    ]
+  }
+]
