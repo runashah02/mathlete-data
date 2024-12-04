@@ -22,7 +22,7 @@ const slabs = [
   { rangeDesc: "1-9", min: 1, max: 9, count: -1 },
 ];
 
-let customCSS = `
+const customCSS = `
       .image-grid {display: grid; grid-template-columns: repeat(auto-fit, 80px); gap: 20px; max-width: 550px; }
       .counting-object-container {position: relative; }
       .counting-object-image {width: 80px; }
